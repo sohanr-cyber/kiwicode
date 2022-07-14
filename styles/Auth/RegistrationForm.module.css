@@ -1,0 +1,78 @@
+.wrapper {
+  padding: 15px;
+  background: white;
+  box-shadow: 2px 2px 2px 2px lightgrey;
+  border-radius: 15px;
+  text-align: center;
+  width: 50%;
+}
+
+.question {
+  margin-bottom: 10px;
+}
+
+.question span {
+  color: rgb(0, 247, 247);
+  font-weight: bold;
+}
+.inputField {
+  width: 100%;
+  position: relative;
+}
+
+.inputField input {
+  width: 100%;
+  padding: 7px 0;
+  padding-left: 25px;
+  margin: 10px 0;
+  border-radius: 15px;
+  border: 1px solid lightgrey;
+}
+
+.inputField span {
+  position: absolute;
+  top: 15px;
+  left: 6px;
+}
+
+.validations {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  font-size: 80%;
+  text-align: left;
+}
+
+.btn {
+  background-color: aqua;
+  padding: 7px;
+  border-radius: 15px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: aquamarine;
+}
+.social__sign {
+  margin: 10px 0;
+  padding-bottom: 7px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.flex span {
+  border: 1px solid lightgrey;
+  padding: 7px 9px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  cursor: pointer;
+  padding-top: 9px;
+}

@@ -1,0 +1,49 @@
+.wrapper {
+  background: linear-gradient(180deg, rgb(9, 0, 58), rgb(0, 0, 136, 0.8));
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  color: white;
+
+  min-height: 110vh;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.price__card {
+  padding: 10px;
+  background-color: rgba(0, 0, 62, 0.8);
+  border-radius: 5px;
+  max-width: 210px;
+}
+
+.time,
+.price {
+  font-size: 130%;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.btn {
+  padding: 5px;
+  background: var(--linearbg1);
+
+  margin: 10px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.price__card .description {
+  font-size: 80%;
+  text-align: center;
+}

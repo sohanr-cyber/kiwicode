@@ -1,0 +1,8 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 15px;
+  /* min-height: 100vh; */
+}

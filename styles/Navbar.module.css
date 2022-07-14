@@ -1,0 +1,44 @@
+.navbar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(12, 2, 66);
+  color: white;
+}
+
+.nav__logo {
+  font-weight: bold;
+  font-size: 150%;
+}
+.nav__logo span {
+}
+
+.navbar .nav__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.nav__items .item {
+  cursor: pointer;
+}
+
+.nav__items .item:hover {
+  color: aqua;
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.nav__right div {
+  cursor: pointer;
+}
+
+.nav__right div:hover {
+  color: aqua;
+}

@@ -1,0 +1,28 @@
+.header {
+  background: linear-gradient(180deg, rgb(9, 0, 58), rgb(0, 0, 136, 0.8));
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  color: white;
+  color: rgb(215, 249, 250);
+  min-height: 100vh;
+}
+
+.header .flex {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn {
+  background: var(--linearbg1);
+  padding: 7px 10px;
+  border-radius: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}

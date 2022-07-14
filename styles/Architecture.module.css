@@ -1,0 +1,50 @@
+.work__wrapper {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  min-height: 90vh;
+  margin: 10px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.grid .item {
+  border-radius: 5px;
+  color: black;
+  padding: 25px 15px;
+  text-align: center;
+  background: white;
+  font-size: 90%;
+  max-width: 200px;
+  box-shadow: 2px 2px 2px 2px rgb(234, 234, 234);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+}
+
+.btn {
+  background: var(--linearbg1);
+  padding: 7px 10px;
+  border-radius: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+}
