@@ -5,6 +5,11 @@
   justify-content: space-between;
   background-color: rgb(12, 2, 66);
   color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  z-index: 99
 }
 
 .nav__logo {
@@ -41,4 +46,47 @@
 
 .nav__right div:hover {
   color: aqua;
+}
+
+.icon {
+  display: none;
+}
+@media (max-width: 570px) {
+  .navbar .nav__items {
+    display: none;
+  }
+  .navbar .nav__right {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .icon:hover {
+    color: aqua;
+  }
+  .nav__vertical {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(12, 2, 66);
+    color: white;
+    padding: 10px;
+    height: 100%;
+  }
+
+  .nav__vertical .nav__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__vertical .nav__right {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(12, 2, 66);
+    color: white;
+    padding: 10px;
+  }
 }

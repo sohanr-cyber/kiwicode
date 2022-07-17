@@ -17,6 +17,7 @@
   align-items: center;
   gap: 15px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .price__card {
@@ -46,4 +47,26 @@
 .price__card .description {
   font-size: 80%;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .price__card {
+    padding: 10px;
+    background-color: rgba(0, 0, 62, 0.8);
+    border-radius: 5px;
+    max-width: 210px;
+    min-height: 280px;
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+
+
 }

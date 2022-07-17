@@ -7,7 +7,8 @@ const Upcomming = () => {
     <div
       className={styles.wrapper}
       style={{
-        backgroundImage: "url('images/telegram.png')",
+        backgroundImage: "url('images/mobile.jpg')",
+        backgroundPosition: "right",
       }}
     >
       <div className={styles.left}>
@@ -15,7 +16,9 @@ const Upcomming = () => {
         <h3>Free to use - no credit card required</h3>
         <Link href="/">Let's get started</Link>
       </div>
-      <div className={styles.right}></div>
+      <div className={styles.right}>
+        <h2>Mobile App is Comming !</h2>
+      </div>
     </div>
   );
 };

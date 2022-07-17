@@ -1,8 +1,33 @@
 .flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 50px;
-  gap: 15px;
+  gap: 100px;
   /* min-height: 100vh; */
+}
+
+.item,
+.icon {
+  cursor: pointer;
+}
+
+.item:hover,
+.icon:hover {
+  color: aqua;
+}
+@media (max-width: 720px) {
+  .flex {
+    width: 100%;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 570px) {
+  .flex {
+    width: 100%;
+    flex-direction: column-reverse;
+    padding: 15px;
+    gap: 25px;
+  }
 }

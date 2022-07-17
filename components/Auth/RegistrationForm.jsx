@@ -7,7 +7,7 @@ import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
 import Image from "next/image";
 
-const RegistrationForm = () => {
+const RegistrationForm = ({ login }) => {
   return (
     <div className={styles.wrapper}>
       <h2>Create Your Account</h2>
@@ -15,20 +15,26 @@ const RegistrationForm = () => {
         Already Have an Account ? <span>Log in</span>
       </div>
       <form>
+        {!login && (
+          <>
+            {" "}
+            <div className={styles.inputField}>
+              <input type="text" placeholder="Username" />
+              <span>
+                <PermIdentityIcon style={{ color: "grey", fontSize: "150%" }} />
+              </span>
+            </div>
+          </>
+        )}
         <div className={styles.inputField}>
-          <input type="text" placeholder="Username" />
-          <span>
-            <PermIdentityIcon style={{ color: "grey", fontSize: "150%" }} />
-          </span>
-        </div>
-        <div className={styles.inputField}>
-          <input type="text" placeholder="Username" />
+          <input type="text" placeholder="Email" />
           <span>
             <MailOutlineIcon style={{ color: "grey", fontSize: "140%" }} />
           </span>
         </div>
+
         <div className={styles.inputField}>
-          <input type="text" placeholder="Username" />
+          <input type="text" placeholder="Password" />
           <span>
             <HttpsOutlinedIcon style={{ color: "grey", fontSize: "140%" }} />
           </span>
@@ -43,7 +49,11 @@ const RegistrationForm = () => {
         <div> 8 characters</div>
       </div>
       <div className={styles.aggrements}></div>
-      <div className={styles.btn}>Create Account</div>
+      {login ? (
+        <div className={styles.btn}>Log in</div>
+      ) : (
+        <div className={styles.btn}>Create Account</div>
+      )}
 
       <h3 className={styles.social__sign}>Or Sign in with Social</h3>
       <div className={styles.flex}>

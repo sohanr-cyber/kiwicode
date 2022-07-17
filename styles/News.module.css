@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 15px;
+  text-align: center;
+}
+
+
+
+
+.flex {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  gap: 10px;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.flex .item {
+  padding: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px lightgrey;
+  min-width: 200px;
+  font-size: 80%;
+  border-radius: 10px;
+  cursor: pointer;
+}

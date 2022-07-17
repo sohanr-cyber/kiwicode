@@ -1,0 +1,25 @@
+.wrapper {
+  padding: 50px;
+  color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .left a {
+  color: aqua;
+  cursor: pointer;
+}
+
+.wrapper .left a:hover {
+  color: white;
+  font-size: 110%;
+}
+
+@media (max-width: 570px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+}

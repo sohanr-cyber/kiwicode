@@ -13,6 +13,7 @@ import Reviews from "../components/Reviews";
 import Price from "../components/Price";
 import Chat from "../components/Chat";
 import Upcomming from "../components/Upcomming";
+import News from "../components/News";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <Price />
         <Reviews />
         <FAQ />
+        <News />
         <Upcomming />
         <Footer />
         <Chat />

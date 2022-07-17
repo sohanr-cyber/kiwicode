@@ -10,7 +10,7 @@ const Register = () => {
       <Navbar />
       <div className={styles.flex}>
         <Introduction />
-        <RegistrationForm />
+        <RegistrationForm login={false} />
       </div>
       <Footer />
     </div>

@@ -4,7 +4,9 @@
   box-shadow: 2px 2px 2px 2px lightgrey;
   border-radius: 15px;
   text-align: center;
-  width: 50%;
+  flex: 1;
+  max-width: 360px;
+  min-width: 300px;
 }
 
 .question {

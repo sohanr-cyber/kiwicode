@@ -10,6 +10,7 @@
   color: white;
   color: rgb(215, 249, 250);
   min-height: 100vh;
+  padding-top: 10vh;
 }
 
 .header .flex {
