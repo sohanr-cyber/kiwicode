@@ -36,6 +36,7 @@
 
 .question {
   padding-right: 25px;
+  cursor: pointer;
 }
 
 .answer {
@@ -123,4 +124,3 @@
     /* min-width: 80%; */
   }
 }
-

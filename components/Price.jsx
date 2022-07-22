@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Price.module.css";
-
+import { Prices } from "../data";
 const Price = () => {
   return (
     <div className={styles.wrapper}>
@@ -10,15 +10,12 @@ const Price = () => {
         to the most frequented questions.
       </p>
       <div className={styles.flex}>
-        {[1, 2, 3].map((item) => (
+        {Prices.map((price) => (
           <div className={styles.price__card}>
-            <h3>Blue Premium</h3>
-            <div className={styles.time}>1 Month </div>
-            <div className={styles.price}>$ 42</div>
-            <div className={styles.description}>
-              2-3 Signals Daily 82% Success Rate Entry, Take Profit & Stop Loss
-              Amount To Risk Per Trade Risk Reward Ratio
-            </div>
+            <h3>{price.title}</h3>
+            <div className={styles.time}>{price.time} </div>
+            <div className={styles.price}>$ {price.price}</div>
+            <div className={styles.description}>{price.details}</div>
             <div className={styles.btn}>Buy Now</div>
           </div>
         ))}

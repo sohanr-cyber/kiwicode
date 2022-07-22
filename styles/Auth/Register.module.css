@@ -1,3 +1,7 @@
+.container {
+  padding-top: 10vh;
+}
+
 .flex {
   display: flex;
   justify-content: space-evenly;

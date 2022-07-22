@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/Architecture.module.css";
 import Image from "next/image";
+import { architecture } from "../data";
 
 const Work = () => {
   return (
@@ -14,22 +15,13 @@ const Work = () => {
       </p>
 
       <div className={styles.grid}>
-        {[1, 2, 2, 2].map((item) => (
+        {architecture.map((item) => (
           <div className={styles.item}>
             <div className={styles.icon}>
-              <Image
-                src="/images/statistics.png"
-                width="35px"
-                height="35px"
-                alt=""
-              />
+              <Image src={item.icon} width="35px" height="35px" alt="" />
             </div>
-            <h4 className={styles.title}>Anlysis</h4>
-            <div className={styles.detail}>
-              Our hybrid set of market indicators and risk strategies ensure
-              high profits with low risk. Our traders trade review each crypto
-              signal for accuracy before sharing it with our VIP Members
-            </div>
+            <h4 className={styles.title}>{item.title}</h4>
+            <div className={styles.detail}>{item.details}</div>
           </div>
         ))}
       </div>

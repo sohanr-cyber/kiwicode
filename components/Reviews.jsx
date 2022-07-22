@@ -1,20 +1,16 @@
 import React from "react";
 import styles from "../styles/Reviews.module.css";
-
+import { reviews } from "../data";
 const Reviews = () => {
   return (
     <div className={styles.wrapper}>
       <h2>What successful traders say about cryptohopper</h2>
       <div className={styles.flex}>
-        {[1, 2, 2, 22].map((item) => (
+        {reviews.map((review) => (
           <div className={styles.card}>
-            <div className={styles.name}>Mark 42</div>
+            <div className={styles.name}>{review.name}</div>
             <div className={styles.star}></div>
-            <div className={styles.review}>
-              I enjoy working with the trailing stop loss. It gives me peace of
-              mind that I know that the hopper will take profit at the moments
-              the prices fall again. Since crypto prices are very volatile, I...
-            </div>
+            <div className={styles.review}>{review.review} </div>
           </div>
         ))}
       </div>

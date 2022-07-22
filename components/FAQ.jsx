@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/Faq.module.css";
 import FaqQuestion from "./FaqQuestion";
-
+import { Faqs } from "../data";
 const FAQ = () => {
   return (
     <div className={styles.wrapper}>
@@ -10,16 +10,8 @@ const FAQ = () => {
         Exchange accounts – Methods of Payment – Trading – Our Team
       </div>
       <div className={styles.faqs}>
-        {[1, 2, 2, 23].map((item) => (
-          <>
-            {/* <div className={styles.left}>
-              <FaqQuestion />
-            </div>
-            <div className={styles.right}>
-              <FaqQuestion />
-            </div> */}
-            <FaqQuestion />
-          </>
+        {Faqs.map((faq) => (
+          <FaqQuestion faq={faq} />
         ))}
       </div>
     </div>
