@@ -5,7 +5,7 @@ import { architecture } from "../data";
 
 const Work = () => {
   return (
-    <div className={styles.work__wrapper}>
+    <div className={styles.work__wrapper} id="architecture" >
       <h1>Crypto Signals - How does it work?</h1>
       <p>
         Make as much money as possible in the crypto world! Join our CrytoCade

@@ -4,7 +4,7 @@ const Header = () => {
 
     
   return (
-    <div className={styles.header}>
+    <div className={styles.header} id="header">
       <h1>
         Welcome to CryptoCade. Get the Best Crypto Signals and Trade Crypto Like
         a Professional

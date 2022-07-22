@@ -3,7 +3,7 @@ import styles from "../styles/Reviews.module.css";
 import { reviews } from "../data";
 const Reviews = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="reviews">
       <h2>What successful traders say about cryptohopper</h2>
       <div className={styles.flex}>
         {reviews.map((review) => (

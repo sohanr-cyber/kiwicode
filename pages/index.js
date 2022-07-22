@@ -25,16 +25,16 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Navbar />
+        <Navbar id="home" />
         <Header />
         <Architecture />
         <Benifit />
-        <Price />
+        <Price  />
         <Reviews />
-        <FAQ />
-        <News />
+        <FAQ  />
+        <News  />
         <Upcomming />
-        <Footer />
+        <Footer  />
         <Chat />
       </main>
 

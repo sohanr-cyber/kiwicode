@@ -10,6 +10,7 @@ const Upcomming = () => {
         backgroundImage: "url('images/mobile.jpg')",
         backgroundPosition: "right",
       }}
+      id="upcomming" 
     >
       <div className={styles.left}>
         <h1>Start trading with Cryptoverse for free!</h1>

@@ -3,7 +3,7 @@ import styles from "../styles/News.module.css";
 import Image from "next/image";
 const News = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="news">
       <h1>Latest blog articles</h1>
       <p>
         Keep up-to-date with the latest trading trends and expert insights on

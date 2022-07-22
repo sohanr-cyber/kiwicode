@@ -4,7 +4,7 @@ import FaqQuestion from "./FaqQuestion";
 import { Faqs } from "../data";
 const FAQ = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="faq" >
       <h2>Frequently Asked Questions</h2>
       <div className={styles.topics}>
         Exchange accounts – Methods of Payment – Trading – Our Team

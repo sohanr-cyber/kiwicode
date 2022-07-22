@@ -3,7 +3,7 @@ import styles from "../styles/Price.module.css";
 import { Prices } from "../data";
 const Price = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="price">
       <h1>Pricing</h1>
       <p>
         You can see our pricing below. In the FAQ section, you will find answers

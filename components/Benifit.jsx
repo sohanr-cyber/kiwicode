@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Benifit = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="benifit">
       <h2>Benefits of Joining – CryptoCade Family VIP</h2>
       <p className={styles.description}>
         Get up to 80 highly professional crypto trading signals every month on
