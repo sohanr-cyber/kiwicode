@@ -12,11 +12,11 @@ const Upcomming = () => {
       }}
       id="upcomming" 
     >
-      <div className={styles.left}>
+      {/* <div className={styles.left}>
         <h1>Start trading with Cryptoverse for free!</h1>
         <h3>Free to use - no credit card required</h3>
         <Link href="/">Let's get started</Link>
-      </div>
+      </div> */}
       <div className={styles.right}>
         <h2>Mobile App is Comming !</h2>
       </div>
