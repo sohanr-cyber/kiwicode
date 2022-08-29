@@ -60,11 +60,21 @@ const Navbar = () => {
             <div className={styles.icon} onClick={() => setOpen(false)}>
               <ClearIcon />
             </div>
-            <div className={styles.item}>Home</div>
-            <div className={styles.item}>About</div>
-            <div className={styles.item}>Pricing</div>
-            <div className={styles.item}>Services</div>
-            <div className={styles.item}>News</div>
+            <div className={styles.item} onClick={() => router.push("/")}>
+          Home
+        </div>
+        <div className={styles.item} onClick={() => router.push("/#header")}>
+          About
+        </div>
+        <div className={styles.item} onClick={() => router.push("/#price")}>
+          Pricing
+        </div>
+        <div className={styles.item} onClick={() => router.push("/#architecture")}>
+          Services
+        </div>
+        <div className={styles.item} onClick={() => router.push("/#news")}>
+          News
+        </div>
           </div>
 
           <div className={styles.nav__right}>

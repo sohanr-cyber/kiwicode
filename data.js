@@ -27,35 +27,31 @@ export const architecture = [
 
 export const reviews = [
   {
-    name: "mark 41",
+    name: "Richard Engel1",
     review:
       "I enjoy working with the trailing stop loss. It gives me peace of mind that I know that the hopper will take profit at the moments the prices fall again. Since crypto prices are very volatile, I...",
+  },
+  {
+    name: "Andrew Uda",
+    review:
+      "CRYPTOHOPPER!! This is exactly how I always envisaged automated trading to be. This trading bot has changed my life in so many ways. Not only did I find a great way to earn passive income using ...",
+  },
+  {
+    name: "Greg Valladolid, synapseDeFi, Inc.1",
+    review:
+      "Cryptohopper's Algorithmic Intelligence (AI) platform has allowed us to visualize, deploy and automate various trading strategies to applicable markets. This has lead to an exponential increase ..."
+  },
+  {
+    name: "Emiel Fellinger",
+    review:
+      "I have been running Cryptohopper with a paid signal and strategy for over one year. And even in the rollercoaster market, I am still up 35% for the year! Easy to use and lots of tutorials on us",
   },
   {
     name: "mark 41",
     review:
       "I enjoy working with the trailing stop loss. It gives me peace of mind that I know that the hopper will take profit at the moments the prices fall again. Since crypto prices are very volatile, I...",
   },
-  {
-    name: "mark 41",
-    review:
-      "I enjoy working with the trailing stop loss. It gives me peace of mind that I know that the hopper will take profit at the moments the prices fall again. Since crypto prices are very volatile, I...",
-  },
-  {
-    name: "mark 41",
-    review:
-      "I enjoy working with the trailing stop loss. It gives me peace of mind that I know that the hopper will take profit at the moments the prices fall again. Since crypto prices are very volatile, I...",
-  },
-  {
-    name: "mark 41",
-    review:
-      "I enjoy working with the trailing stop loss. It gives me peace of mind that I know that the hopper will take profit at the moments the prices fall again. Since crypto prices are very volatile, I...",
-  },
-  {
-    name: "mark 41",
-    review:
-      "I enjoy working with the trailing stop loss. It gives me peace of mind that I know that the hopper will take profit at the moments the prices fall again. Since crypto prices are very volatile, I...",
-  },
+
 ];
 
 export const Faqs = [
@@ -123,5 +119,33 @@ export const Prices = [
     price: "899",
     details:
       "Access to signals and support for lifetime , To have included Cornix , Automation , or API-signals , you need them before purchase",
+  },
+];
+
+export const benifits = [
+  {
+    title: "Be The First",
+    details:
+      "Buy the dip, sell the top. Easy to say, harder to do. That’s why we are here: to satisfy the needs of our clients. As our ParadiseFamilyVIP member you will get our trading signals everyday, we will share our buy zone – that is where we are accumulating the coin, sell targets – where we are starting to sell our position and our stop loss in case the trade turns against us, we are securing our money by tight stop loss. Low risk high, reward strategy – that is our daily bread.",
+  },
+  {
+    title: "Personal Coach",
+    details:
+      "We love talking about finance, bitcoin and any new cryptocurrency trading strategies. You will also get your own coach, who will be available 24/7 on chat or on phone. As our VIP member you will also get a 30-minute introduction call with one of our crypto experts.",
+  },
+  {
+    title: "Friendly Support",
+    details:
+      "Our team are committed to delivering the best support for all your trading needs. My Crypto Paradise aims to set a new standard of excellence in Cryptocurrency Trading, your coach is always ready to answer all your questions on the chat or you can call them anytime!",
+  },
+  {
+    title: "VIP Chatroom",
+    details:
+      "The Paradise Team and VIP members are here to help and share information with each other. Join the Paradise Family Chat to enjoy one of the best crypto communities on the planet",
+  },
+  {
+    title: "Market Analysis",
+    details:
+      "Our Paradise Team are professionals with many years’ experience and they keep an eye on the market every day for you. We research the news and the coins for you, then update you with the brief of the important and relevant news, charts and graphs.",
   },
 ];

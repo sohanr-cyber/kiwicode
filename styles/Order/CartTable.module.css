@@ -1,0 +1,36 @@
+.cart__table__container table {
+  border: 1px solid lightgrey;
+  padding: 10px 0;
+}
+
+.cart__table__container table tr {
+  border-bottom: 1px solid lightgrey;
+}
+
+.cart__table__container th {
+  border-bottom: 1px solid lightgrey;
+  padding: 0 0 5px 0;
+}
+
+.cart__table__container table td {
+  padding: 5px;
+  text-align: center;
+}
+
+.cart__table__container table td:nth-child(1) {
+  color: rgb(0, 0, 120);
+}
+
+.cart__table__container table input {
+  border: none;
+  background: inherit;
+  border: 1px solid lightgrey;
+  padding: 3px;
+  max-width: 100px;
+}
+
+.cart__table__container table tr:nth-last-child(1) td:nth-last-child(1) {
+  padding: 3px 5px;
+  background: rgb(214, 214, 214, 0.5);
+  cursor: pointer;
+}

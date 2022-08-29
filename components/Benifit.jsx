@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/Benifits.module.css";
 import Image from "next/image";
+import { benifits } from "../data";
 
 const Benifit = () => {
   return (
@@ -16,7 +17,7 @@ const Benifit = () => {
       </p>
 
       <div className={styles.benifits}>
-        {[1, 2, 3, 3].map((item) => (
+        {benifits.map((benifit, index) => (
           <div className={styles.benifit}>
             <div className={styles.title}>
               <span>
@@ -27,18 +28,9 @@ const Benifit = () => {
                   alt="Check-mark"
                 />
               </span>
-              <span> Be The First</span>
+              <span>{benifit.title}</span>
             </div>
-            <p>
-              Buy the dip, sell the top. Easy to say, harder to do. That’s why
-              we are here: to satisfy the needs of our clients. As our
-              ParadiseFamilyVIP member you will get our trading signals
-              everyday, we will share our buy zone – that is where we are
-              accumulating the coin, sell targets – where we are starting to
-              sell our position and our stop loss in case the trade turns
-              against us, we are securing our money by tight stop loss. Low risk
-              high, reward strategy – that is our daily bread.
-            </p>
+            <p>{benifit.details}</p>
           </div>
         ))}
       </div>

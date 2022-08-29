@@ -1,0 +1,26 @@
+.form__container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+}
+
+.form__container input,
+.form__container textarea {
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  min-width: 100%;
+}
+
+.form__container textarea {
+  min-height: 33vh;
+}

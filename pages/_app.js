@@ -4,7 +4,6 @@ import { Provider } from "react-redux";
 import ProgressBar from "react-scroll-progress-bar"; //Add this line
 import NextNProgress from "nextjs-progressbar";
 
-
 function MyApp({ Component, pageProps }) {
   return (
     <>
