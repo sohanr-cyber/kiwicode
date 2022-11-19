@@ -1,0 +1,35 @@
+.wrapper {
+  min-height: 100vh;
+  padding: 50px;
+  padding-top: 100px;
+}
+
+.cards {
+
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  gap: 15px;
+}
+
+.flex {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0;
+
+}
+
+@media (max-width: 570px) {
+  .wrapper {
+    padding-top: 100px;
+    padding: 15px;
+  }
+  .flex {
+    flex-direction: column;
+  }
+}

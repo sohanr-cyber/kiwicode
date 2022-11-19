@@ -1,0 +1,113 @@
+.wrapper {
+  padding: 50px;
+  padding-top: 100px;
+  min-height: 100vh;
+  border-radius: 5px;
+}
+
+.table__container {
+  /* box-shadow: 2px 2px 2px 5px lightgrey; */
+  overflow-x: scroll;
+  text-align: left;
+  width: 100%;
+}
+
+.container {
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 5px rgb(234, 234, 234);
+  background: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  /* background-color: aqua; */
+  border-radius: 5px;
+}
+
+.header .left {
+  font-weight: bold;
+  font-size: 110%;
+}
+.header .right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header .right .action__icon {
+  color: lightgrey;
+  cursor: pointer;
+}
+.header .input__field {
+  position: relative;
+  display: flex;
+  /* border: 1px solid; */
+}
+
+.header .input__field .icon {
+  position: absolute;
+  right: 0;
+  padding: 3px;
+  border-radius: 0 15px 15px 0;
+  height: 100%;
+
+  cursor: pointer;
+  background: var(--linearbg1);
+  color: initial;
+  color: var(--color);
+}
+
+.header input {
+  border: none;
+  border-radius: 15px;
+  border: 1px solid lightgrey;
+  width: 100%;
+  padding: 3px;
+}
+
+.table__container table {
+  border-collapse: collapse;
+  position: relative;
+  padding-top: 30px;
+}
+
+.table__container tr:nth-child(1) {
+  color: white;
+  position: absolute;
+  height: 30px;
+  /* background: linear-gradient(90deg, rgb(0, 15, 77) 0%, rgb(1, 55, 189) 100%); */
+  /* background: aqua; */
+  /* color: black; */
+}
+
+.table__container .flex {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.table__container th,
+.table__container td {
+  min-width: 120px;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.table__container th {
+  /* background-color: cyan; */
+  background: var(--linearbg1);
+  color: rgb(215, 249, 250);
+}
+
+.table__container tr:nth-child(even) {
+  background-color: rgb(211, 248, 248);
+}
+
+@media (max-width: 570px) {
+  .wrapper {
+    padding: 15px;
+    padding-top: 100px;
+  }
+}

@@ -12,7 +12,8 @@ const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.nav__logo} onClick={() => router.push("/")}>
-        Crypto<span>C</span>ade
+        {/* Crypto<span>C</span>ade */}
+        CryptoCade
       </div>
       <div className={styles.nav__items}>
         <div className={styles.item} onClick={() => router.push("/")}>
@@ -24,7 +25,10 @@ const Navbar = () => {
         <div className={styles.item} onClick={() => router.push("/#price")}>
           Pricing
         </div>
-        <div className={styles.item} onClick={() => router.push("/#architecture")}>
+        <div
+          className={styles.item}
+          onClick={() => router.push("/#architecture")}
+        >
           Services
         </div>
         <div className={styles.item} onClick={() => router.push("/#news")}>
@@ -61,20 +65,26 @@ const Navbar = () => {
               <ClearIcon />
             </div>
             <div className={styles.item} onClick={() => router.push("/")}>
-          Home
-        </div>
-        <div className={styles.item} onClick={() => router.push("/#header")}>
-          About
-        </div>
-        <div className={styles.item} onClick={() => router.push("/#price")}>
-          Pricing
-        </div>
-        <div className={styles.item} onClick={() => router.push("/#architecture")}>
-          Services
-        </div>
-        <div className={styles.item} onClick={() => router.push("/#news")}>
-          News
-        </div>
+              Home
+            </div>
+            <div
+              className={styles.item}
+              onClick={() => router.push("/#header")}
+            >
+              About
+            </div>
+            <div className={styles.item} onClick={() => router.push("/#price")}>
+              Pricing
+            </div>
+            <div
+              className={styles.item}
+              onClick={() => router.push("/#architecture")}
+            >
+              Services
+            </div>
+            <div className={styles.item} onClick={() => router.push("/#news")}>
+              News
+            </div>
           </div>
 
           <div className={styles.nav__right}>
