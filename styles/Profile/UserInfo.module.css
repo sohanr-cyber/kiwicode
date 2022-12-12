@@ -1,0 +1,172 @@
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.shape {
+  text-align: center;
+  padding-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(50% 100%, 100% 50%, 100% 0, 0 0, 0 50%);
+  background: linear-gradient(180deg, rgb(9, 0, 58), rgb(0, 0, 136, 0.8));
+  max-height: 60vh;
+  min-height: 50vh;
+  width: 100%;
+  position: relative;
+  border: 1px solid black;
+  flex-direction: column;
+}
+
+.position {
+  display: inline;
+  border: 2px solid lightgrey;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  z-index: 2;
+  top: 150px;
+  position: absolute;
+}
+
+.photo__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.profile__photo {
+  position: absolute;
+}
+
+.others__info {
+  margin-top: 100px;
+  text-align: center;
+  color: rgb(8, 8, 59);
+}
+
+.name {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.star,
+.triangle,
+.circle_1,
+.circle_2 {
+  position: absolute;
+}
+
+.star {
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  height: 30px;
+  width: 30px;
+  bottom: 80px;
+  right: 80px;
+}
+
+.triangle {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  height: 25px;
+  width: 25px;
+  bottom: 250px;
+  left: 15%;
+}
+
+.triangle,
+.star {
+  background: rgb(9, 9, 80);
+}
+
+.circle_1,
+.circle_2 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(0, 247, 247, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle_1 {
+  bottom: -100px;
+  left: -70px;
+}
+
+.circle_2 {
+  bottom: 100px;
+  right: -100px;
+}
+
+.inner_cirlce_1,
+.inner_cirlce_2 {
+  border-radius: 50%;
+  background: rgb(244, 252, 252);
+  height: 170px;
+  width: 170px;
+}
+
+.profile__photo {
+  border-radius: 50%;
+  /* border: 2px solid lightgrey; */
+  overflow: hidden;
+}
+
+@media (max-width: 570px) {
+  .shape {
+    clip-path: polygon(50% 100%, 100% 50%, 100% 0, 0 0, 0 50%);
+  }
+
+  .profile__photo {
+    top: -100px;
+  }
+
+  .others__info {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile__photo {
+    top: -120px;
+  }
+
+  /* .shape {
+    min-height: 60vh;
+  } */
+
+  .circle_1 {
+  }
+
+  .circle_2 {
+    bottom: 190px;
+    right: -120px;
+  }
+
+  .star {
+    bottom: 150px;
+    right: 50px;
+  }
+
+  .triangle {
+    bottom: 300px;
+    left: 10%;
+  }
+}
