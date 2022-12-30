@@ -8,6 +8,7 @@ import { useEffect } from "react";
 ReactGA.initialize("347755089");
 
 function MyApp({ Component, pageProps }) {
+  // Google anaylyitcs added
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
