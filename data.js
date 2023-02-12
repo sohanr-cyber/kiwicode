@@ -39,7 +39,7 @@ export const reviews = [
   {
     name: "Greg Valladolid, synapseDeFi, Inc.1",
     review:
-      "Cryptohopper's Algorithmic Intelligence (AI) platform has allowed us to visualize, deploy and automate various trading strategies to applicable markets. This has lead to an exponential increase ..."
+      "Cryptohopper's Algorithmic Intelligence (AI) platform has allowed us to visualize, deploy and automate various trading strategies to applicable markets. This has lead to an exponential increase ...",
   },
   {
     name: "Emiel Fellinger",
@@ -51,53 +51,94 @@ export const reviews = [
     review:
       "I enjoy working with the trailing stop loss. It gives me peace of mind that I know that the hopper will take profit at the moments the prices fall again. Since crypto prices are very volatile, I...",
   },
-
 ];
 
+// export const Faqs = [
+//   {
+//     question: "What are Crypto Signals?",
+//     answear:
+//       "Crypto signals, as the name suggests, are signals or ideas that professional traders acquire using technical and fundamental analysis to trade a certain cryptocurrency. Crypto signals are created in two ways: automated and manual. Automated signals are created by sophisticated software run by trained professionals. Manual crypto signals are created by experienced traders who recognize patterns using advanced tools and indicators. Our signals are manual crypto signals curated by an experienced team of veteran traders. Our signals often specify the type of cryptocurrency to buy, such as Bitcoin, Ethereum, or XRP",
+//   },
+//   {
+//     question:
+//       "WHow CryptCade Team Acquire Crypto Signals?at are Crypto Signals?",
+//     answear:
+//       "CryptoCade Team consists of 4 professional traders with expertise in Technical and Fundamental Analysis. We make use of these skills using sophisticated tools to do deep analysis and find suitable entries or exits.",
+//   },
+//   {
+//     question: "What exchange accounts do i need?",
+//     answear:
+//       "We trade primarily on Binance and Bitmex. Bitmex accounts are not available to US or Canadian residents without the use of a reliable VPN. The great news is that price action will be very similar to other large exchanges like Kraken, Bitstamp and Huobi. No matter where you live, Paradise Signals can help you trade like a pro.",
+//   },
+//   {
+//     question: "Are paradise signals classified by risks?",
+//     answear:
+//       "Yes. Our Paradise Signals are classified by risk and are posted with follwoing titles: ‘Very Safe,’ ‘Regular,’ ‘Risky,’ or ‘Very Risky.’ Our traders will also follow up on signals to teach members the market determining principles",
+//   },
+//   {
+//     question: "How big is the paradise team?",
+//     answear:
+//       "It is important to ALWAYS remember that unlike many signal providers, we care about YOU! We value each of our members and provide personal coaching for all of you: whether you’ve chosen our 1 Month plan or our 1 Year VIP plan. Once you’ve signed up and paid for your VIP membership, a paradise pro trader will be there to teach you proper trading strategies, how to avoid costly errors, and how to mitigate risk. Our traders will be available each day to answer questions and to help make your trading experience as easy as possible.",
+//   },
+//   {
+//     question: "How does Paradise personal coaching work?",
+//     answear:
+//       "Our team contains four skilled market analysts. Each one of our traders has their own field of expertise and together we are strong team.",
+//   },
+//   {
+//     question: "How big is the paradise team?",
+//     answear:
+//       "Our team contains four skilled market analysts. Each one of our traders has their own field of expertise and together we are strong team.",
+//   },
+//   {
+//     question: "How big is the paradise team?",
+//     answear:
+//       "Our team contains four skilled market analysts. Each one of our traders has their own field of expertise and together we are strong team.",
+//   },
+// ];
 export const Faqs = [
   {
-    question: "What are Crypto Signals?",
-    answear:
-      "Crypto signals, as the name suggests, are signals or ideas that professional traders acquire using technical and fundamental analysis to trade a certain cryptocurrency. Crypto signals are created in two ways: automated and manual. Automated signals are created by sophisticated software run by trained professionals. Manual crypto signals are created by experienced traders who recognize patterns using advanced tools and indicators. Our signals are manual crypto signals curated by an experienced team of veteran traders. Our signals often specify the type of cryptocurrency to buy, such as Bitcoin, Ethereum, or XRP",
+    question: "What types of investment products does Avocado offer?",
+    answer:
+      "We offer a wide range of investment products, including stocks, bonds, mutual funds, and more. Our expert advisors can help you choose the products that best fit your financial goals and risk tolerance.",
+  },
+  {
+    question: "How does Avocado make money?",
+    answer:
+      "We make money by charging a fee on the investment products we offer. This fee is typically a percentage of the investment amount, and is used to cover the costs of managing and administering the investment.",
+  },
+  {
+    question: "Is my money safe with Avocado?",
+    answer:
+      "Yes, we take the security of your investment and personal information very seriously. We use state-of-the-art security measures to protect your data, and are regulated by financial authorities to ensure that we operate in a transparent and ethical manner.",
+  },
+  {
+    question: "Can I withdraw my money at any time?",
+    answer:
+      "Most of our investment products have some level of liquidity, which means you can withdraw your money at any time, subject to certain conditions. However, some products may have longer lock-up periods or other restrictions on withdrawals, so it's important to review the terms of your investment carefully before committing.",
+  },
+  {
+    question: "How can I contact Avocado if I have more questions?",
+    answer:
+      "You can contact us anytime by emailing [email protected] or by calling our customer support hotline at 1-800-AVOCADO. Our team is here to help you with any questions or concerns you may have.",
+  },
+  {
+    question: "How do I sign up for an Avocado account?",
+    answer:
+      'To sign up for an Avocado account, simply visit our website and click on the "Sign Up" button. Follow the prompts to create your account and complete the registration process.',
   },
   {
     question:
-      "WHow CryptCade Team Acquire Crypto Signals?at are Crypto Signals?",
-    answear:
-      "CryptoCade Team consists of 4 professional traders with expertise in Technical and Fundamental Analysis. We make use of these skills using sophisticated tools to do deep analysis and find suitable entries or exits.",
+      "Do I need to have a certain amount of money to start investing with Avocado?",
+    answer:
+      "No, you can start investing with Avocado with any amount of money that you feel comfortable investing. Our expert advisors can help you create a customized investment plan that fits your financial goals and budget.",
   },
   {
-    question: "What exchange accounts do i need?",
-    answear:
-      "We trade primarily on Binance and Bitmex. Bitmex accounts are not available to US or Canadian residents without the use of a reliable VPN. The great news is that price action will be very similar to other large exchanges like Kraken, Bitstamp and Huobi. No matter where you live, Paradise Signals can help you trade like a pro.",
-  },
-  {
-    question: "Are paradise signals classified by risks?",
-    answear:
-      "Yes. Our Paradise Signals are classified by risk and are posted with follwoing titles: ‘Very Safe,’ ‘Regular,’ ‘Risky,’ or ‘Very Risky.’ Our traders will also follow up on signals to teach members the market determining principles",
-  },
-  {
-    question: "How big is the paradise team?",
-    answear:
-      "It is important to ALWAYS remember that unlike many signal providers, we care about YOU! We value each of our members and provide personal coaching for all of you: whether you’ve chosen our 1 Month plan or our 1 Year VIP plan. Once you’ve signed up and paid for your VIP membership, a paradise pro trader will be there to teach you proper trading strategies, how to avoid costly errors, and how to mitigate risk. Our traders will be available each day to answer questions and to help make your trading experience as easy as possible.",
-  },
-  {
-    question: "How does Paradise personal coaching work?",
-    answear:
-      "Our team contains four skilled market analysts. Each one of our traders has their own field of expertise and together we are strong team.",
-  },
-  {
-    question: "How big is the paradise team?",
-    answear:
-      "Our team contains four skilled market analysts. Each one of our traders has their own field of expertise and together we are strong team.",
-  },
-  {
-    question: "How big is the paradise team?",
-    answear:
-      "Our team contains four skilled market analysts. Each one of our traders has their own field of expertise and together we are strong team.",
+    question: "How do I make investments with Avocado?",
+    answer:
+      "You can make investments with Avocado through our online platform. Simply log in to your account, choose the investment product you want to invest in, and follow the prompts to complete the investment process.",
   },
 ];
-
 export const Prices = [
   {
     title: "Blue Premium :: 1",
@@ -124,28 +165,28 @@ export const Prices = [
 
 export const benifits = [
   {
-    title: "Be The First",
+    title: "Expert advicet",
     details:
-      "Buy the dip, sell the top. Easy to say, harder to do. That’s why we are here: to satisfy the needs of our clients. As our ParadiseFamilyVIP member you will get our trading signals everyday, we will share our buy zone – that is where we are accumulating the coin, sell targets – where we are starting to sell our position and our stop loss in case the trade turns against us, we are securing our money by tight stop loss. Low risk high, reward strategy – that is our daily bread.",
+      " Our team of expert advisors is here to help you make informed investment decisions and maximize your returns. We have years of experience in the investment industry and are dedicated to helping you achieve your financial goals.",
   },
   {
-    title: "Personal Coach",
+    title: "Wide range of investment products",
     details:
-      "We love talking about finance, bitcoin and any new cryptocurrency trading strategies. You will also get your own coach, who will be available 24/7 on chat or on phone. As our VIP member you will also get a 30-minute introduction call with one of our crypto experts.",
+      "We offer a wide range of investment products, including stocks, bonds, mutual funds, and more, to help you diversify your portfolio and manage risk.",
   },
   {
-    title: "Friendly Support",
+    title: "Competitive returns",
     details:
-      "Our team are committed to delivering the best support for all your trading needs. My Crypto Paradise aims to set a new standard of excellence in Cryptocurrency Trading, your coach is always ready to answer all your questions on the chat or you can call them anytime!",
+      "We strive to offer competitive returns on our investment products, so you can earn more on your money",
   },
   {
-    title: "VIP Chatroom",
+    title: "Simplicity and convenience",
     details:
-      "The Paradise Team and VIP members are here to help and share information with each other. Join the Paradise Family Chat to enjoy one of the best crypto communities on the planet",
+      "We make it easy for you to invest with us, with a simple online platform and 24/7 customer support.",
   },
   {
-    title: "Market Analysis",
+    title: "Security and trust:",
     details:
-      "Our Paradise Team are professionals with many years’ experience and they keep an eye on the market every day for you. We research the news and the coins for you, then update you with the brief of the important and relevant news, charts and graphs.",
+      "We take the security of your investment and personal information seriously, and are committed to maintaining the highest standards of trust and transparency",
   },
 ];

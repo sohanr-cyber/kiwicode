@@ -14,6 +14,7 @@ import Price from "../components/Price";
 import Chat from "../components/Chat";
 import Upcomming from "../components/Upcomming";
 import News from "../components/News";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
@@ -24,17 +25,76 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <NextSeo
+        title="Avocado - Your Trusted Investment Partner"
+        description="Welcome to Avocado, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals."
+        openGraph={{
+          type: "website",
+          url: "https://avocado.com",
+          title: "Avocado - Your Trusted Investment Partner",
+          description:
+            "Welcome to Avocado, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals.",
+          images: [
+            {
+              url: "https://avocado.com/avocado.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Avocado",
+            },
+          ],
+        }}
+        twitter={{
+          handle: "@avocado",
+          site: "@avocado",
+          cardType: "summary_large_image",
+          title: "Avocado - Your Trusted Investment Partner",
+          description:
+            "Welcome to Avocado, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals.",
+          image: "https://avocado.com/avocado.jpg",
+        }}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Avocado",
+          legalName: "Avocado Investments, Inc.",
+          url: "https://avocado.com",
+          logo: "https://avocado.com/avocado.jpg",
+          foundingDate: "2022-01-01",
+          sameAs: [
+            "https://facebook.com/avocado",
+            "https://twitter.com/avocado",
+            "https://linkedin.com/avocado",
+          ],
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "123 Main Street",
+            addressLocality: "New York",
+            addressRegion: "NY",
+            postalCode: "10001",
+            addressCountry: "USA",
+          },
+          contactPoint: {
+            "@type": "ContactPoint",
+            telephone: "+1-212-555-1212",
+            contactType: "customer service",
+          },
+          description:
+            "Welcome to Avocado, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals.",
+        }}
+      />
+
       <main className={styles.main}>
         <Navbar id="home" />
         <Header />
         <Architecture />
         <Benifit />
-        <Price  />
         <Reviews />
-        <FAQ  />
-        <News  />
+        <Price />
+        <News />
+
+        <FAQ />
         <Upcomming />
-        <Footer  />
+        <Footer />
         <Chat />
       </main>
 

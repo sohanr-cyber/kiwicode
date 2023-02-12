@@ -1,0 +1,14 @@
+.container {
+  font-size: 180%;
+  font-weight: bold;
+  color: yellowgreen;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container span {
+  margin: 1.5px;
+  /* text-shadow: 2px 2px 2px orange; */
+}

@@ -18,6 +18,7 @@
   position: relative;
   border: 1px solid black;
   flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0), rgb(0, 60, 255));
 }
 
 .position {

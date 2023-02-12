@@ -46,7 +46,7 @@
 }
 
 .btn {
-  background-color: aqua;
+  background-color: rgb(15, 217, 217);
   padding: 7px;
   border-radius: 15px;
   margin: 10px 0;
@@ -55,7 +55,7 @@
   cursor: pointer;
 }
 .btn:hover {
-  background-color: aquamarine;
+  background-color: var(--black);
 }
 .social__sign {
   margin: 10px 0;

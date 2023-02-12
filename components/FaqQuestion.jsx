@@ -8,7 +8,7 @@ const FaqQuestion = ({ faq }) => {
       <div className={styles.question} onClick={() => setOpen((prev) => !prev)}>
         {faq.question}
       </div>
-      {open && <div className={styles.answer}>{faq.answear}</div>}
+      {open && <div className={styles.answer}>{faq.answer}</div>}
 
       <div className={styles.open} onClick={() => setOpen((prev) => !prev)}>
         {open ? <>-</> : <>+</>}

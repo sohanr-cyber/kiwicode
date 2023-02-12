@@ -1,16 +1,30 @@
 .header {
-  background: linear-gradient(180deg, rgb(9, 0, 58), rgb(0, 0, 136, 0.8));
-  padding: 0 50px;
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.header video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
-  gap: 15px;
-  color: white;
-  color: rgb(215, 249, 250);
-  min-height: 100vh;
-  padding-top: 10vh;
+  color: aliceblue;
+  padding: 15px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 60, 255, 0.1));
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
 .header .flex {

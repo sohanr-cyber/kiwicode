@@ -41,13 +41,13 @@ const RegistrationForm = ({ login }) => {
           <span className={styles.eye}></span>
         </div>
       </form>
-      <div className={styles.validations}>
+      {/* <div className={styles.validations}>
         <div> 8 characters</div>
         <div> 8 characters</div>
         <div> 8 characters</div>
         <div> 8 characters</div>
         <div> 8 characters</div>
-      </div>
+      </div> */}
       <div className={styles.aggrements}></div>
       {login ? (
         <div className={styles.btn}>Log in</div>

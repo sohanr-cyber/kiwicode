@@ -4,12 +4,13 @@ import styles from "../../styles/Auth/Introduction.module.css";
 const Introduction = () => {
   return (
     <div className={styles.wrapper}>
-      <h1>Introduction to Cryptohopper</h1>
+      <h1>Welcome to Avocado</h1>
 
       <p>
-        Join us for an interactive, introductory Cryptohopper experience. We’ll
-        show you how to create Hoppers, connect your exchange, copy pro traders
-        and build AIs.
+        your go-to investment platform. With a wide range of products, expert
+        advice, and a secure online platform, we make it easy to grow your
+        wealth and reach your financial goals. Sign in to your account and start
+        investing today.
       </p>
     </div>
   );
