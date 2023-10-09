@@ -34,7 +34,7 @@ const Navbar = () => {
       className={styles.navbar}
     >
       <div className={styles.nav__logo} onClick={() => router.push("/")}>
-        {visible ? <Logo /> : <></>}
+        {visible ? <Logo dyanamic={true} /> : <></>}
       </div>
 
       <motion.div

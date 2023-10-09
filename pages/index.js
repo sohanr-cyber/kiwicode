@@ -26,44 +26,44 @@ export default function Home() {
       </Head>
 
       <NextSeo
-        title="Avocado - Your Trusted Investment Partner"
-        description="Welcome to Avocado, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals."
+        title="InvestHere - Your Trusted Investment Partner"
+        description="Welcome to InvestHere, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals."
         openGraph={{
           type: "website",
-          url: "https://avocado.com",
-          title: "Avocado - Your Trusted Investment Partner",
+          url: "https://InvestHere.com",
+          title: "InvestHere - Your Trusted Investment Partner",
           description:
-            "Welcome to Avocado, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals.",
+            "Welcome to InvestHere, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals.",
           images: [
             {
-              url: "https://avocado.com/avocado.jpg",
+              url: "https://InvestHere.com/InvestHere.jpg",
               width: 1200,
               height: 630,
-              alt: "Avocado",
+              alt: "InvestHere",
             },
           ],
         }}
         twitter={{
-          handle: "@avocado",
-          site: "@avocado",
+          handle: "@InvestHere",
+          site: "@InvestHere",
           cardType: "summary_large_image",
-          title: "Avocado - Your Trusted Investment Partner",
+          title: "InvestHere - Your Trusted Investment Partner",
           description:
-            "Welcome to Avocado, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals.",
-          image: "https://avocado.com/avocado.jpg",
+            "Welcome to InvestHere, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals.",
+          image: "https://InvestHere.com/InvestHere.jpg",
         }}
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Avocado",
-          legalName: "Avocado Investments, Inc.",
-          url: "https://avocado.com",
-          logo: "https://avocado.com/avocado.jpg",
+          name: "InvestHere",
+          legalName: "InvestHere Investments, Inc.",
+          url: "https://InvestHere.com",
+          logo: "https://InvestHere.com/InvestHere.jpg",
           foundingDate: "2022-01-01",
           sameAs: [
-            "https://facebook.com/avocado",
-            "https://twitter.com/avocado",
-            "https://linkedin.com/avocado",
+            "https://facebook.com/InvestHere",
+            "https://twitter.com/InvestHere",
+            "https://linkedin.com/InvestHere",
           ],
           address: {
             "@type": "PostalAddress",
@@ -79,7 +79,7 @@ export default function Home() {
             contactType: "customer service",
           },
           description:
-            "Welcome to Avocado, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals.",
+            "Welcome to InvestHere, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals.",
         }}
       />
 

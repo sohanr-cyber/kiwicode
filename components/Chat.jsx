@@ -6,7 +6,7 @@ const Chat = () => {
     <div className={styles.wrapper}>
       <div className={styles.chat__link}>
         <div className={styles.icon}>
-          <div className={styles.chat}>Chat with One Of Our traders</div>
+          <div className={styles.chat}>Chat with One Of Our Admin</div>
           <Image
             src="/images/telegram.png"
             width="35px"

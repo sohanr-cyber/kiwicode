@@ -34,17 +34,17 @@ export const reviews = [
   {
     name: "Andrew Uda",
     review:
-      "CRYPTOHOPPER!! This is exactly how I always envisaged automated trading to be. This trading bot has changed my life in so many ways. Not only did I find a great way to earn passive income using ...",
+      "InvestHere!! This is exactly how I always envisaged automated trading to be. This trading bot has changed my life in so many ways. Not only did I find a great way to earn passive income using ...",
   },
   {
     name: "Greg Valladolid, synapseDeFi, Inc.1",
     review:
-      "Cryptohopper's Algorithmic Intelligence (AI) platform has allowed us to visualize, deploy and automate various trading strategies to applicable markets. This has lead to an exponential increase ...",
+      "InvestHere's Algorithmic Intelligence (AI) platform has allowed us to visualize, deploy and automate various trading strategies to applicable markets. This has lead to an exponential increase ...",
   },
   {
     name: "Emiel Fellinger",
     review:
-      "I have been running Cryptohopper with a paid signal and strategy for over one year. And even in the rollercoaster market, I am still up 35% for the year! Easy to use and lots of tutorials on us",
+      "I have been running InvestHere with a paid signal and strategy for over one year. And even in the rollercoaster market, I am still up 35% for the year! Easy to use and lots of tutorials on us",
   },
   {
     name: "mark 41",
@@ -98,17 +98,17 @@ export const reviews = [
 // ];
 export const Faqs = [
   {
-    question: "What types of investment products does Avocado offer?",
+    question: "What types of investment products does InvestHere offer?",
     answer:
       "We offer a wide range of investment products, including stocks, bonds, mutual funds, and more. Our expert advisors can help you choose the products that best fit your financial goals and risk tolerance.",
   },
   {
-    question: "How does Avocado make money?",
+    question: "How does InvestHere make money?",
     answer:
       "We make money by charging a fee on the investment products we offer. This fee is typically a percentage of the investment amount, and is used to cover the costs of managing and administering the investment.",
   },
   {
-    question: "Is my money safe with Avocado?",
+    question: "Is my money safe with InvestHere?",
     answer:
       "Yes, we take the security of your investment and personal information very seriously. We use state-of-the-art security measures to protect your data, and are regulated by financial authorities to ensure that we operate in a transparent and ethical manner.",
   },
@@ -118,25 +118,25 @@ export const Faqs = [
       "Most of our investment products have some level of liquidity, which means you can withdraw your money at any time, subject to certain conditions. However, some products may have longer lock-up periods or other restrictions on withdrawals, so it's important to review the terms of your investment carefully before committing.",
   },
   {
-    question: "How can I contact Avocado if I have more questions?",
+    question: "How can I contact InvestHere if I have more questions?",
     answer:
-      "You can contact us anytime by emailing [email protected] or by calling our customer support hotline at 1-800-AVOCADO. Our team is here to help you with any questions or concerns you may have.",
+      "You can contact us anytime by emailing [email protected] or by calling our customer support hotline at 1-800-InvestHere. Our team is here to help you with any questions or concerns you may have.",
   },
   {
-    question: "How do I sign up for an Avocado account?",
+    question: "How do I sign up for an InvestHere account?",
     answer:
-      'To sign up for an Avocado account, simply visit our website and click on the "Sign Up" button. Follow the prompts to create your account and complete the registration process.',
+      'To sign up for an InvestHere account, simply visit our website and click on the "Sign Up" button. Follow the prompts to create your account and complete the registration process.',
   },
   {
     question:
-      "Do I need to have a certain amount of money to start investing with Avocado?",
+      "Do I need to have a certain amount of money to start investing with InvestHere?",
     answer:
-      "No, you can start investing with Avocado with any amount of money that you feel comfortable investing. Our expert advisors can help you create a customized investment plan that fits your financial goals and budget.",
+      "No, you can start investing with InvestHere with any amount of money that you feel comfortable investing. Our expert advisors can help you create a customized investment plan that fits your financial goals and budget.",
   },
   {
-    question: "How do I make investments with Avocado?",
+    question: "How do I make investments with InvestHere?",
     answer:
-      "You can make investments with Avocado through our online platform. Simply log in to your account, choose the investment product you want to invest in, and follow the prompts to complete the investment process.",
+      "You can make investments with InvestHere through our online platform. Simply log in to your account, choose the investment product you want to invest in, and follow the prompts to complete the investment process.",
   },
 ];
 export const Prices = [

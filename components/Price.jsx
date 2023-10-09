@@ -1,7 +1,23 @@
 import React from "react";
 import styles from "../styles/Price.module.css";
 import { Prices } from "../data";
+import axios from "axios";
+import { useRouter } from "next/router";
 const Price = () => {
+  const router = useRouter();
+  const buy = async (price) => {
+    try {
+      const { data } = await axios.post("/api/checkout", {
+        name: "Buying packge of " + price.price + " USDT",
+        description: price.details,
+        amount: price.price,
+        currency: "USDT",
+      });
+      router.push(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div className={styles.wrapper} id="price">
       <h1>Pricing</h1>
@@ -16,7 +32,9 @@ const Price = () => {
             <div className={styles.time}>{price.time} </div>
             <div className={styles.price}>$ {price.price}</div>
             <div className={styles.description}>{price.details}</div>
-            <div className={styles.btn}>Buy Now</div>
+            <div className={styles.btn} onClick={() => buy(price)}>
+              Buy Now
+            </div>
           </div>
         ))}
       </div>

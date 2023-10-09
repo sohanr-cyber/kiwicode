@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/Footer.module.css";
 import Image from "next/image";
 import CopyrightIcon from "@mui/icons-material/Copyright";
+import Logo from "./utils/Logo";
 
 const Footer = () => {
   return (
@@ -10,7 +11,9 @@ const Footer = () => {
         {" "}
         <div className={styles.left}>
           <logo></logo>
-          <div className={styles.name}>CryptoCade</div>
+          <div className={styles.name}>
+            <Logo />
+          </div>
         </div>
         <div className={styles.mid}>
           <div className={styles.contact}>Contact Us</div>

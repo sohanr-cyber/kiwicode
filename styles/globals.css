@@ -20,7 +20,7 @@ body {
   --color1: rgb(0, 183, 255);
   --color: rgb(215, 249, 250);
   --background: linear-gradient(180deg, rgb(9, 0, 58), rgb(0, 0, 136, 0.8));
-  --black: rgb(9, 0, 58);
+  --black:  rgb(0, 0, 30);
 }
 
 ::-webkit-scrollbar {

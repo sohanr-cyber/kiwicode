@@ -19,7 +19,7 @@ const Upcomming = () => {
       </div>
       <div className={styles.right}>
         {/* <h2>Mobile App is Comming !</h2> */}
-        <h2>
+        <h2 style={{ color: "yellow" }}>
           <a href="assets/nft.apk">Download Our Mobile App</a>
         </h2>
       </div>

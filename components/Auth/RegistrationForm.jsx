@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../../styles/Auth/RegistrationForm.module.css";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
@@ -6,14 +6,26 @@ import HttpsOutlinedIcon from "@mui/icons-material/HttpsOutlined";
 import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
 import Image from "next/image";
-
+import Confetti from "../utils/Confetti";
+import { useRouter } from "next/router";
 const RegistrationForm = ({ login }) => {
+  const [confettiOn, setConfettiOn] = useState(false);
+  const router = useRouter();
+
   return (
     <div className={styles.wrapper}>
-      <h2>Create Your Account</h2>
-      <div className={styles.question}>
-        Already Have an Account ? <span>Log in</span>
-      </div>
+      <h2>{login ? <>Log in </> : <>Create</>} Your Account</h2>
+      {login ? (
+        <div className={styles.question}>
+          Don't Have an Account ?{" "}
+          <span onClick={() => rotuer.push("/register")}>Sign Up</span>
+        </div>
+      ) : (
+        <div className={styles.question}>
+          Already Have an Account ?{" "}
+          <span onClick={() => router.push("/login")}>Log in</span>
+        </div>
+      )}
       <form>
         {!login && (
           <>
@@ -52,7 +64,9 @@ const RegistrationForm = ({ login }) => {
       {login ? (
         <div className={styles.btn}>Log in</div>
       ) : (
-        <div className={styles.btn}>Create Account</div>
+        <div className={styles.btn} onClick={() => setConfettiOn(true)}>
+          Create Account
+        </div>
       )}
 
       <h3 className={styles.social__sign}>Or Sign in with Social</h3>
@@ -83,6 +97,7 @@ const RegistrationForm = ({ login }) => {
           />
         </span>
       </div>
+      {confettiOn && <Confetti setConfettiOn={setConfettiOn} />}
     </div>
   );
 };

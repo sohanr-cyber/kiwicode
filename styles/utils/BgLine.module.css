@@ -1,0 +1,14 @@
+.line {
+  min-width: 110%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: rotate(160deg);
+  background-color: blue;
+}
+
+.item {
+  height: 20px;
+  flex: 1;
+}
