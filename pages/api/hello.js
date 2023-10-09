@@ -46,32 +46,11 @@ handler.get(async (req, res) => {
       privateKey
     );
 
-    // Send the signed transaction to the Ethereum network
-    // web3.eth
-    //   .sendSignedTransaction(signedTransaction.rawTransaction)
-    //   .on("transactionHash", (hash) => {
-    //     console.log(`Transaction hash: ${hash}`);
-    //     // Release the mutex after the transaction is sent
-    //     // release();
-    //   })
-    //   .on("confirmation", (confirmationNumber, receipt) => {
-    //     console.log(`Confirmation number: ${confirmationNumber}`);
-    //     release();
-    //     console.log("released from confirmation");
-    //     if (confirmationNumber >= 6) {
-    //       console.log("Transaction confirmed:", receipt);
-    //     }
-    //   })
-    //   .on("error", (error) => {
-    //     console.error("Transaction error:", error); // Release the mutex in case of an error
-    //     release();
-    //   });
-
     web3.eth
       .sendSignedTransaction(signedTransaction.rawTransaction)
       .then((reciept) => {
         console.log(reciept);
-        res.statu(200).send("done");
+        res.status(200).send("done");
         console.log("released");
         release();
       });
