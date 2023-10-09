@@ -72,7 +72,6 @@ handler.get(async (req, res) => {
       .then((reciept) => {
         console.log(reciept);
         res.statu(200).send("done");
-
         console.log("released");
         release();
       });
