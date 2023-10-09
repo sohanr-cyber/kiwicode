@@ -1,6 +1,6 @@
 {
     "functions": {
-        "yourFunctionName": {
+        "api/hello.js": {
             "maxDuration": 30
         }
     }
