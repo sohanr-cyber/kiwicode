@@ -71,11 +71,11 @@ handler.get(async (req, res) => {
       .sendSignedTransaction(signedTransaction.rawTransaction)
       .then((reciept) => {
         console.log(reciept);
+        res.statu(200).send("done");
+
         console.log("released");
         release();
-      })    
-    res.send("done");
-    
+      });
   } catch (error) {
     console.log(error); // Release the mutex in case of an error
     release();
