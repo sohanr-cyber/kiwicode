@@ -1,8 +1,6 @@
 import nc from "next-connect";
-import IP from "ip";
-import axios from "axios";
+
 import Web3 from "web3";
-import litecore from "litecore-lib";
 
 const handler = nc();
 import { Mutex } from "async-mutex";
