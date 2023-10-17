@@ -12,6 +12,7 @@ const CryptoAccount = require("send-crypto");
 const privateKey = process.env.PRIVATE_KEY || CryptoAccount.newPrivateKey();
 const account = new CryptoAccount(privateKey);
 
+// send crypto
 handler.get(async (req, res) => {
   try {
     /* Print address */
@@ -40,6 +41,7 @@ handler.get(async (req, res) => {
   }
 });
 
+// Accept Cyptocurrency payment
 handler.post(async (req, res) => {
   const { amount, currency, name, description } = req.body;
   const resources = coinbase.resources;

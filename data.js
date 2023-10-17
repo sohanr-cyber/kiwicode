@@ -320,6 +320,15 @@ export const projects = [
     image: "/projects/kiwicode.png",
   },
   {
+    title: "Crypto Payment Integration with Coinbase",
+    overview:
+      "Developed a secure and user-friendly crypto payment system for an online marketplace using Coinbase Commerce. ",
+    technologiesUsed: ["NextJs", "coinbase-commerce-node"],
+    git: "https://github.com/sohanr-cyber/cryptosignal/blob/main/pages/api/checkout.js",
+    live: "https://cryptosignal.vercel.app/#price",
+    image: "/projects/payment.png",
+  },
+  {
     title: "Investment Company Landing Page Design",
     overview:
       "The Investment Company Landing Page Design project aimed to create a visually appealing and user-friendly web page that would serve as the company's digital storefront. The primary objectives were to establish trust, provide essential information, and encourage visitors to explore investment opportunities. ",
