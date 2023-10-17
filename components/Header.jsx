@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import styles from "../styles/Header.module.css";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 const welcomeData =
   "Code Your Way to Success Where Attractiveness Meets Effectiveness";
 const welcomePData =
@@ -13,7 +14,7 @@ const Header = () => {
   const [welcome, setWelcome] = useState("");
   const [welcomeP, setWelcomeP] = useState("");
   const [welcomeP2, setWelcomeP2] = useState("");
-
+  const router = useRouter();
   useEffect(() => {
     let count = 0;
     let interval = setInterval(() => {
@@ -73,6 +74,7 @@ const Header = () => {
           }}
           transition={{ duration: 15.5 }}
           className={styles.btn}
+          onClick={() => router.push("/#projects")}
         >
           See Our Project
         </motion.div>

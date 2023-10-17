@@ -98,7 +98,7 @@ export default function Home() {
 
         {/* <FAQ /> */}
         <Footer />
-        <Chat />
+        {/* <Chat /> */}
       </main>
 
       <footer className={styles.footer}></footer>
