@@ -1,10 +1,11 @@
 import styles from "../../styles/Project/Project.module.css";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 const Project = ({ p, index }) => {
   const [imageDominantColor, setImageDominantColor] = useState(null);
-
+  const router = useRouter();
   return (
     <div
       className={styles.container}
@@ -12,7 +13,14 @@ const Project = ({ p, index }) => {
     >
       <div className={styles.left}>
         {p.image ? (
-          <Image src={p.image} width="1200" height="1000" alt="" />
+          <Image
+            src={p.image}
+            width="1200"
+            height="1000"
+            alt=""
+            placeholder="blur"
+            blurDataURL={`data:${p.image};base64 , /9j/4AAQSkZJRgABAQEASABIAAD...`}
+          />
         ) : (
           <Image
             src="/projects/invh.png"
@@ -46,8 +54,10 @@ const Project = ({ p, index }) => {
         )}
         {p.git && (
           <p className={styles.link}>
-            <span>GitHub</span>
-            {p.live && <span>Live Demo</span>}
+            <span onClick={() => rotuer.push(p.git)}>GitHub</span>
+            {p.live && (
+              <span onClick={() => router.push(p.live)}>Live Demo</span>
+            )}
           </p>
         )}{" "}
       </div>

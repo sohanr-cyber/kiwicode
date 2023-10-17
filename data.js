@@ -295,7 +295,7 @@ export const projects = [
       "The Gradient Color Generator is a React-based tool designed to help users create beautiful gradient backgrounds for their web projects. Users can interactively select colors and generate the CSS code for their gradients.",
     technologiesUsed: [
       "React for building the user interface",
-      "CSS for styling and animations",
+      "CSS for styling",
     ],
     keyFeatures: [
       "Interactive color pickers for start and end colors",
@@ -307,24 +307,25 @@ export const projects = [
     image: "/projects/grad.png",
   },
   {
+    title: "Software Company Landing Page Design",
+    overview:
+      "The Software Company Landing Page Design project focused on creating an engaging and informative web page that would showcase the software company's expertise, services, and technology solutions. The main objectives were to establish a strong online presence, attract potential clients, and provide an overview of the company's capabilities.",
+    technologiesUsed: [
+      "React for building the user interface",
+      "CSS for styling",
+      "Framer motion for animation",
+    ],
+    live: "https://kiwicode.vercel.app/",
+    git: "https://github.com/sohanr-cyber/kiwicode",
+    image: "/projects/kiwicode.png",
+  },
+  {
     title: "Investment Company Landing Page Design",
     overview:
       "The Investment Company Landing Page Design project aimed to create a visually appealing and user-friendly web page that would serve as the company's digital storefront. The primary objectives were to establish trust, provide essential information, and encourage visitors to explore investment opportunities. ",
     technologiesUsed: ["NextJs", "Framer motion"],
     git: "https://github.com/sohanr-cyber/cryptosignal",
     live: "https://cryptosignal.vercel.app/",
-    image: "/projects/invh.png",
-  },
-  {
-    title: "Software Company Landing Page Design",
-    overview:
-      "The Software Company Landing Page Design project focused on creating an engaging and informative web page that would showcase the software company's expertise, services, and technology solutions. The main objectives were to establish a strong online presence, attract potential clients, and provide an overview of the company's capabilities.",
-    technologiesUsed: [
-      "Figma for design mockups",
-      "HTML/CSS for front-end development",
-    ],
-    live: "",
-    git: "",
     image: "/projects/invh.png",
   },
 
