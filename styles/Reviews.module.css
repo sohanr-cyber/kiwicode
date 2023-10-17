@@ -68,3 +68,10 @@
   font-size: 90%;
   color: grey;
 }
+
+
+@media (max-width: 570px) {
+  .wrapper {
+    padding: 50px 15px
+  }
+}

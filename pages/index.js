@@ -15,6 +15,7 @@ import Chat from "../components/Chat";
 import Upcomming from "../components/Upcomming";
 import News from "../components/News";
 import { NextSeo } from "next-seo";
+import Projects from "../components/Projects/Projects";
 
 export default function Home() {
   return (
@@ -26,60 +27,60 @@ export default function Home() {
       </Head>
 
       <NextSeo
-        title="InvestHere - Your Trusted Investment Partner"
-        description="Welcome to InvestHere, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals."
+        title="KiwiCode - Your Source for Innovative Software Solutions"
+        description="At KiwiCode, we craft custom software solutions to meet your unique business needs. Our expert team delivers cutting-edge technology and unparalleled quality."
         openGraph={{
           type: "website",
-          url: "https://InvestHere.com",
-          title: "InvestHere - Your Trusted Investment Partner",
+          url: "https://www.kiwicode.com",
+          title: "KiwiCode - Your Source for Innovative Software Solutions",
           description:
-            "Welcome to InvestHere, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals.",
+            "At KiwiCode, we craft custom software solutions to meet your unique business needs. Our expert team delivers cutting-edge technology and unparalleled quality.",
           images: [
             {
-              url: "https://InvestHere.com/InvestHere.jpg",
+              url: "https://www.kiwicode.com/kiwicode.jpg",
               width: 1200,
               height: 630,
-              alt: "InvestHere",
+              alt: "KiwiCode",
             },
           ],
         }}
         twitter={{
-          handle: "@InvestHere",
-          site: "@InvestHere",
+          handle: "@KiwiCode",
+          site: "@KiwiCode",
           cardType: "summary_large_image",
-          title: "InvestHere - Your Trusted Investment Partner",
+          title: "KiwiCode - Your Source for Innovative Software Solutions",
           description:
-            "Welcome to InvestHere, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals.",
-          image: "https://InvestHere.com/InvestHere.jpg",
+            "At KiwiCode, we craft custom software solutions to meet your unique business needs. Our expert team delivers cutting-edge technology and unparalleled quality.",
+          image: "https://www.kiwicode.com/kiwicode.jpg",
         }}
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "InvestHere",
-          legalName: "InvestHere Investments, Inc.",
-          url: "https://InvestHere.com",
-          logo: "https://InvestHere.com/InvestHere.jpg",
-          foundingDate: "2022-01-01",
+          name: "KiwiCode",
+          legalName: "KiwiCode Software Solutions, Inc.",
+          url: "https://www.kiwicode.com",
+          logo: "https://www.kiwicode.com/kiwicode.jpg",
+          foundingDate: "Year Founded",
           sameAs: [
-            "https://facebook.com/InvestHere",
-            "https://twitter.com/InvestHere",
-            "https://linkedin.com/InvestHere",
+            "https://www.facebook.com/KiwiCode",
+            "https://twitter.com/KiwiCode",
+            "https://www.linkedin.com/company/kiwicode",
           ],
           address: {
             "@type": "PostalAddress",
             streetAddress: "123 Main Street",
-            addressLocality: "New York",
-            addressRegion: "NY",
-            postalCode: "10001",
-            addressCountry: "USA",
+            addressLocality: "City",
+            addressRegion: "State",
+            postalCode: "ZIP Code",
+            addressCountry: "Country",
           },
           contactPoint: {
             "@type": "ContactPoint",
-            telephone: "+1-212-555-1212",
+            telephone: "+1-123-456-7890",
             contactType: "customer service",
           },
           description:
-            "Welcome to InvestHere, your trusted investment partner. We offer a wide range of investment products to help you grow your wealth and achieve your financial goals.",
+            "At KiwiCode, we craft custom software solutions to meet your unique business needs. Our expert team delivers cutting-edge technology and unparalleled quality.",
         }}
       />
 
@@ -87,13 +88,15 @@ export default function Home() {
         <Navbar id="home" />
         <Header />
         <Architecture />
-        <Benifit />
+        {/* <Benifit /> */}
+        <Projects />
         <Reviews />
-        <Price />
+        {/* <Price /> */}
+        {/* <Upcomming /> */}
+
         <News />
 
-        <FAQ />
-        <Upcomming />
+        {/* <FAQ /> */}
         <Footer />
         <Chat />
       </main>

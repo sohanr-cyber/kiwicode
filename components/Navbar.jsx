@@ -29,7 +29,7 @@ const Navbar = () => {
       animate={{
         opacity: 1,
         y: 0,
-        transition: { duration: 8 },
+        transition: { duration: 10 },
       }}
       className={styles.navbar}
     >
@@ -52,8 +52,8 @@ const Navbar = () => {
         <div className={styles.item} onClick={() => router.push("/#header")}>
           About
         </div>
-        <div className={styles.item} onClick={() => router.push("/#price")}>
-          Pricing
+        <div className={styles.item} onClick={() => router.push("/#projects")}>
+          Projects
         </div>
         <div
           className={styles.item}
@@ -61,17 +61,11 @@ const Navbar = () => {
         >
           Services
         </div>
+        <div className={styles.item} onClick={() => router.push("/#reviews")}>
+          Reviews
+        </div>
         <div className={styles.item} onClick={() => router.push("/#news")}>
           News
-        </div>
-        <div className={styles.item} onClick={() => router.push("/admin")}>
-          Admin
-        </div>
-        <div
-          className={styles.item}
-          onClick={() => router.push("/profile/23845")}
-        >
-          Profile
         </div>
       </motion.div>
       <motion.div
@@ -83,21 +77,14 @@ const Navbar = () => {
           transition: { duration: 13 },
         }}
       >
-        {user ? (
-          <div className={styles.profile}>Mark 41</div>
-        ) : (
-          <>
-            <div className={styles.sign} onClick={() => router.push("/login")}>
-              Log in
-            </div>
-            <div
-              className={styles.sign}
-              onClick={() => router.push("/register")}
-            >
-              Sign up
-            </div>
-          </>
-        )}
+        <div className={styles.profile}>
+          <div
+            className={styles.item}
+            onClick={() => router.push("mailto:sohanur25800@gmail.com")}
+          >
+            Contact
+          </div>
+        </div>
       </motion.div>
       {!open && (
         <div className={styles.icon} onClick={() => setOpen(true)}>
@@ -119,8 +106,11 @@ const Navbar = () => {
             >
               About
             </div>
-            <div className={styles.item} onClick={() => router.push("/#price")}>
-              Pricing
+            <div
+              className={styles.item}
+              onClick={() => router.push("/#project")}
+            >
+              Projects
             </div>
             <div
               className={styles.item}
@@ -128,39 +118,26 @@ const Navbar = () => {
             >
               Services
             </div>
-            <div className={styles.item} onClick={() => router.push("/#news")}>
-              News
-            </div>
-            <div className={styles.item} onClick={() => router.push("/admin")}>
-              Admin
-            </div>
             <div
               className={styles.item}
-              onClick={() => router.push("/profile/23845")}
+              onClick={() => router.push("/#reviews")}
             >
-              Profile
+              Reviews
+            </div>
+            <div className={styles.item} onClick={() => router.push("/#news")}>
+              News
             </div>
           </div>
 
           <div className={styles.nav__right}>
-            {user ? (
-              <div className={styles.profile}>Mark 41</div>
-            ) : (
-              <>
-                <div
-                  className={styles.sign}
-                  onClick={() => router.push("/login")}
-                >
-                  Log in
-                </div>
-                <div
-                  className={styles.sign}
-                  onClick={() => router.push("/register")}
-                >
-                  Sign up
-                </div>
-              </>
-            )}
+            <div className={styles.profile}>
+              <div
+                className={styles.item}
+                onClick={() => router.push("mailto:sohanur25800@gmail.com")}
+              >
+                Contact
+              </div>
+            </div>
           </div>
         </div>
       )}

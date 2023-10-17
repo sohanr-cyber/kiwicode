@@ -3,11 +3,12 @@ import { useEffect } from "react";
 import { useState } from "react";
 import styles from "../styles/Header.module.css";
 import { motion } from "framer-motion";
-const welcomeData = "Welcome to InvestHere";
+const welcomeData =
+  "Code Your Way to Success Where Attractiveness Meets Effectiveness";
 const welcomePData =
-  " Thank you for visiting our website. We are a leading investment company, dedicated to helping you grow your wealth and achieve your financial goals. Our team of expert advisors is here to help you make informed investment decisions and maximize your returns.";
+  "At KiwiCode we're passionate about creating innovative and cutting-edge software solutions. Our mission is to transform your ideas into reality, providing you with software that not only meets your needs but exceeds your expectations.";
 const welcomeP2Data =
-  "Explore our investment products and contact us today to learn more about how we can help you achieve your financial dreams.";
+  "Discover Our Services and Reach Out Today to Explore How We Can Elevate Your Success";
 const Header = () => {
   const [welcome, setWelcome] = useState("");
   const [welcomeP, setWelcomeP] = useState("");
@@ -52,9 +53,9 @@ const Header = () => {
 
   return (
     <div className={styles.header} id="header">
-      <video autoPlay={true} muted loop id="myVideo">
-        <source src="assets/bg-video.mp4" type="video/mp4" />
-      </video>
+      {/* <video autoPlay={true} muted loop id="myVideo">
+        <source src="assets/bg3.mp4" type="video/mp4" />
+      </video> */}
       <div className={styles.content}>
         <h1>
           {welcome.split(" ").map((part, index) => (
@@ -63,8 +64,59 @@ const Header = () => {
             </span>
           ))}
         </h1>
-        <p>{welcomeP}</p> <p>{welcomeP2}</p>
-      </div>
+        <h3>{welcomeP}</h3> <h3>{welcomeP2}</h3>
+        <motion.div
+          initial={{ opacity: 0, y: 200000 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{ duration: 15.5 }}
+          className={styles.btn}
+        >
+          See Our Project
+        </motion.div>
+      </div>{" "}
+      <motion.div
+        initial={{ opacity: 0, y: -200000 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{ duration: 13.5 }}
+        className={styles.star}
+      ></motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: -200000 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{ duration: 14 }}
+        className={styles.triangle}
+      ></motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: -200000 }}
+        animate={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{ duration: 14.5 }}
+        className={styles.circle_1}
+      >
+        <div className={styles.inner_cirlce_1}></div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 200000 }}
+        animate={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{ duration: 15 }}
+        className={styles.circle_2}
+      >
+        <div className={styles.inner_cirlce_1}></div>
+      </motion.div>
     </div>
   );
 };

@@ -16,13 +16,13 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.mid}>
-          <div className={styles.contact}>Contact Us</div>
+          <h3 className={styles.contact}>Contact Us</h3>
           <div className={styles.email}>
             Eamil us : <span> testEmail@gmail.com</span>
           </div>
-          <div className={styles.telegram}>
+          {/* <div className={styles.telegram}>
             Telegram : Click <span>Here</span> to contact use
-          </div>
+          </div> */}
           <div className={styles.flex}>
             <div className={styles.icon}>
               <Image
@@ -54,18 +54,15 @@ const Footer = () => {
         </div>
         <div className={styles.right}>
           <h3 className={styles.heading}>
-            Your investments are your responsibility
+            <h4>About Kiwicode</h4>
           </h3>
           <p>
-            We do not accept any liability for any loss or damage which is
-            incurred from you acting or not acting as a result of reading any of
-            our publications. You acknowledge that you use the information we
-            provide at your own risk. MyCryptoParadise does not offer investment
-            advice and nothing in the calls we make should be construed as
-            investment advice. MyCryptoParadise provides information and
-            education based on our own trades. You are paying to follow our
-            trades that we document for educational purposes.
+            Kiwicode is a leading software development company that specializes
+            in delivering innovative solutions tailored to your business needs.
+            With a commitment to excellence, we are dedicated to helping
+            businesses thrive in the digital age.
           </p>
+
           <div className={styles.flex}>
             <span>Terms & Condition</span>
             <span>Privacy</span>

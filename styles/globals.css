@@ -54,6 +54,7 @@ a {
 table {
   border-radius: 5px;
 }
+
 @media (max-width: 570px) {
   body {
     font-size: 80%;

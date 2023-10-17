@@ -7,13 +7,7 @@ import Logo from "./utils/Logo";
 const Work = () => {
   return (
     <div className={styles.work__wrapper} id="architecture">
-      <Logo /> <h1>How does it work?</h1>
-      <p>
-        Make as much money as possible in the crypto world! Join our InvestHere
-        Family VIP members now! Get up to 9 crypto signals on Binance or Bitmex
-        and Bybit per day, daily insights on the crypto market, daily updates,
-        crypto analysis and much more!
-      </p>
+      <Logo /> <h1>What do we do?</h1>
       <div className={styles.grid}>
         {architecture.map((item) => (
           <div className={styles.item}>
@@ -25,7 +19,7 @@ const Work = () => {
           </div>
         ))}
       </div>
-      <div className={styles.btn}>Get Membership now</div>
+      <div className={styles.btn}>Contact Us</div>
     </div>
   );
 };

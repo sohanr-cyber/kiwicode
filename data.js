@@ -1,55 +1,152 @@
 export const architecture = [
   {
-    icon: "/images/statistics.png",
-    title: "Analysis",
+    icon: "https://cdn-icons-png.flaticon.com/128/9172/9172978.png",
+    title: "UI/UX Design",
     details:
-      "Our hybrid set of market indicators and risk strategies ensure high profits with low risk. Our traders trade review each crypto signal for accuracy before sharing it with our VIP Members.",
+      "Aesthetics and user experience are vital in today's digital landscape. We craft visually appealing and user-centric designs that captivate your audience.",
   },
   {
-    icon: "/images/search.png",
-    title: "Research",
+    icon: "https://cdn-icons-png.flaticon.com/128/1927/1927656.png",
+    title: "Web Development",
     details:
-      "Our crypto trading signals are based on deep analysis with a unique combination of analytics that provides well-timed trading signals just before major price action on best cryptocurrencies.",
+      "Our web development services encompass front-end and back-end development, creating responsive and user-friendly websites that engage your audience and deliver exceptional user experiences.",
+  },
+  // {
+  //   icon: "/images/telegram (1).png",
+  //   title: "Backend Development",
+  //   details:
+  //     "We specialize in the development of robust and scalable backend systems that power your applications",
+  // },
+  // {
+  //   icon: "/images/guarantee-certificate.png",
+  //   title: "Frontend Development",
+  //   details:
+  //     "Our frontend development services focus on creating engaging and user-friendly interfaces that make a lasting impression",
+  // },
+  {
+    icon: "https://cdn-icons-png.flaticon.com/128/10087/10087438.png",
+    title: "Consultation",
+    details:
+      "Have an idea, but not sure how to execute it? We offer consultation services to help you refine your project vision, define requirements, and create a roadmap for success.",
   },
   {
-    icon: "/images/telegram (1).png",
-    title: "Telegram",
+    icon: "https://cdn-icons-png.flaticon.com/128/2618/2618477.png",
+    title: "Ongoing Support",
     details:
-      "Our crypto trading signals and coaching will be posted on telegram because of its proven accessibility and reliability",
-  },
-  {
-    icon: "/images/guarantee-certificate.png",
-    title: "Gurantee",
-    details:
-      "Our community of happy VIP clients has grown so quickly, and so have their wallets. We are so confident in our product that we can guarantee your satisfaction.",
+      "Our commitment to your project doesn't end with development. We provide ongoing support, ensuring your software remains up-to-date and secure.",
   },
 ];
 
 export const reviews = [
   {
-    name: "Richard Engel1",
-    review:
-      "I enjoy working with the trailing stop loss. It gives me peace of mind that I know that the hopper will take profit at the moments the prices fall again. Since crypto prices are very volatile, I...",
+    user: {
+      name: "Alice Johnson",
+      location: "Los Angeles, CA",
+      avatar: "https://example.com/avatar/alice-johnson.jpg",
+    },
+    rating: 4,
+    date: "2023-09-15",
+    content:
+      "Kiwicode has been a reliable partner in our software development projects. They are responsive, adaptable, and provide innovative solutions. Their team helped us launch our product on time, and the results were impressive.",
   },
   {
-    name: "Andrew Uda",
-    review:
-      "InvestHere!! This is exactly how I always envisaged automated trading to be. This trading bot has changed my life in so many ways. Not only did I find a great way to earn passive income using ...",
+    user: {
+      name: "David Smith",
+      location: "San Francisco, CA",
+      avatar: "https://example.com/avatar/david-smith.jpg",
+    },
+    rating: 5,
+    date: "2023-08-20",
+    content:
+      "I can't say enough good things about Kiwicode. They're experts in their field and have a deep understanding of software development. Our project was delivered ahead of schedule and exceeded our expectations. I highly recommend Kiwicode.",
   },
   {
-    name: "Greg Valladolid, synapseDeFi, Inc.1",
-    review:
-      "InvestHere's Algorithmic Intelligence (AI) platform has allowed us to visualize, deploy and automate various trading strategies to applicable markets. This has lead to an exponential increase ...",
+    user: {
+      name: "Ella Brown",
+      location: "Chicago, IL",
+      avatar: "https://example.com/avatar/ella-brown.jpg",
+    },
+    rating: 4,
+    date: "2023-07-10",
+    content:
+      "Kiwicode provided top-notch software solutions for our company. Their team was easy to work with, and they delivered a robust and user-friendly product. We'll definitely continue to collaborate with them in the future.",
   },
   {
-    name: "Emiel Fellinger",
-    review:
-      "I have been running InvestHere with a paid signal and strategy for over one year. And even in the rollercoaster market, I am still up 35% for the year! Easy to use and lots of tutorials on us",
+    user: {
+      name: "Michael Wilson",
+      location: "Boston, MA",
+      avatar: "https://example.com/avatar/michael-wilson.jpg",
+    },
+    rating: 5,
+    date: "2023-06-05",
+    content:
+      "Working with Kiwicode was a fantastic experience. They created a cutting-edge software application for us that greatly improved our workflow. Their attention to detail and commitment to quality is truly commendable.",
   },
   {
-    name: "mark 41",
-    review:
-      "I enjoy working with the trailing stop loss. It gives me peace of mind that I know that the hopper will take profit at the moments the prices fall again. Since crypto prices are very volatile, I...",
+    user: {
+      name: "Sophia Lee",
+      location: "Houston, TX",
+      avatar: "https://example.com/avatar/sophia-lee.jpg",
+    },
+    rating: 5,
+    date: "2023-05-02",
+    content:
+      "Kiwicode stands out in the software development industry. They are innovative, creative, and highly professional. Our project was completed on time, and their support post-launch has been exceptional.",
+  },
+  {
+    user: {
+      name: "Daniel Clark",
+      location: "Miami, FL",
+      avatar: "https://example.com/avatar/daniel-clark.jpg",
+    },
+    rating: 4,
+    date: "2023-04-18",
+    content:
+      "We had a great experience collaborating with Kiwicode. Their team is technically sound, and they pay close attention to our requirements. The end result was a high-quality software product.",
+  },
+  {
+    user: {
+      name: "Ava Rodriguez",
+      location: "Seattle, WA",
+      avatar: "https://example.com/avatar/ava-rodriguez.jpg",
+    },
+    rating: 5,
+    date: "2023-03-12",
+    content:
+      "Kiwicode exceeded our expectations in every way. Their software development expertise is unparalleled. Our project was not only delivered on time but also within budget. We are thrilled with the results.",
+  },
+  {
+    user: {
+      name: "Oliver Baker",
+      location: "Denver, CO",
+      avatar: "https://example.com/avatar/oliver-baker.jpg",
+    },
+    rating: 4,
+    date: "2023-02-06",
+    content:
+      "Kiwicode has been a solid partner in our software development endeavors. They have consistently provided innovative solutions and excellent support. Our software project was a great success.",
+  },
+  {
+    user: {
+      name: "Mia Martin",
+      location: "Austin, TX",
+      avatar: "https://example.com/avatar/mia-martin.jpg",
+    },
+    rating: 5,
+    date: "2023-01-01",
+    content:
+      "Our experience with Kiwicode has been outstanding. They're a dedicated and talented team of developers. They understood our needs and delivered a software solution that exceeded our expectations.",
+  },
+  {
+    user: {
+      name: "Liam Turner",
+      location: "Phoenix, AZ",
+      avatar: "https://example.com/avatar/liam-turner.jpg",
+    },
+    rating: 4,
+    date: "2022-12-15",
+    content:
+      "Kiwicode is a top-notch software development company. They are responsive, skilled, and provide",
   },
 ];
 
@@ -188,5 +285,132 @@ export const benifits = [
     title: "Security and trust:",
     details:
       "We take the security of your investment and personal information seriously, and are committed to maintaining the highest standards of trust and transparency",
+  },
+];
+
+export const projects = [
+  {
+    title: "Gradient Color Generator",
+    overview:
+      "The Gradient Color Generator is a React-based tool designed to help users create beautiful gradient backgrounds for their web projects. Users can interactively select colors and generate the CSS code for their gradients.",
+    technologiesUsed: [
+      "React for building the user interface",
+      "CSS for styling and animations",
+    ],
+    keyFeatures: [
+      "Interactive color pickers for start and end colors",
+      "Real-time gradient preview",
+      "Copy button for easily copying CSS code",
+    ],
+    git: "https://github.com/sohanr-cyber/gradient-maker",
+    live: "https://gradient-maker-rho.vercel.app/",
+    image: "/projects/grad.png",
+  },
+  {
+    title: "Investment Company Landing Page Design",
+    overview:
+      "The Investment Company Landing Page Design project aimed to create a visually appealing and user-friendly web page that would serve as the company's digital storefront. The primary objectives were to establish trust, provide essential information, and encourage visitors to explore investment opportunities. ",
+    technologiesUsed: ["NextJs", "Framer motion"],
+    git: "https://github.com/sohanr-cyber/cryptosignal",
+    live: "https://cryptosignal.vercel.app/",
+    image: "/projects/invh.png",
+  },
+  {
+    title: "Software Company Landing Page Design",
+    overview:
+      "The Software Company Landing Page Design project focused on creating an engaging and informative web page that would showcase the software company's expertise, services, and technology solutions. The main objectives were to establish a strong online presence, attract potential clients, and provide an overview of the company's capabilities.",
+    technologiesUsed: [
+      "Figma for design mockups",
+      "HTML/CSS for front-end development",
+    ],
+    live: "",
+    git: "",
+    image: "/projects/invh.png",
+  },
+
+  {
+    title: "Cloud File Storage Platform",
+    overview:
+      "The Cloud File Storage Platform is a full-stack web application developed using MongoDB and Next.js. It provides users with the ability to securely store, manage, and share files in the cloud. The platform features user authentication and fine-grained authorization controls to ensure data security.",
+    technologiesUsed: [
+      "Next.js for the front end and Backend",
+      "MongoDB for data storage",
+      "Authentication with JWT (JSON Web Tokens)",
+      "FireBase For Media File Storage",
+    ],
+
+    keyFeatures: [
+      "User registration and authentication",
+      "File and folder management",
+      "User-based access control and permission management",
+    ],
+    git: "https://github.com/sohanr-cyber/NextDrive",
+    live: "https://driveclone.vercel.app/login",
+    image: "/projects/drive.png",
+  },
+];
+
+export const blogs = [
+  {
+    title: "Harnessing the Power of AI: A Guide for Business Transformation",
+    date: "2023-10-16",
+    author: "Kiwicode Team",
+    content:
+      "In the ever-evolving landscape of technology, Artificial Intelligence (AI) has emerged as a game-changer for businesses across various industries. AI is no longer a concept from science fiction; it's a tangible and transformative tool that can help companies streamline processes, gain insights, and enhance customer experiences...",
+    tags: [
+      "Artificial Intelligence",
+      "Business Transformation",
+      "Data Analytics",
+    ],
+  },
+  {
+    title: "Web Development Best Practices: Creating User-Friendly Websites",
+    date: "2023-09-28",
+    author: "John Smith",
+    content:
+      "In the digital age, a user-friendly website is crucial for engaging your audience and achieving your business goals. Web development best practices are essential to create a site that not only looks great but also performs well and provides an exceptional user experience...",
+    tags: ["Web Development", "User Experience", "Web Design"],
+  },
+  {
+    title: "The Future of Mobile Apps: Trends to Watch",
+    date: "2023-09-12",
+    author: "Sarah Anderson",
+    content:
+      "Mobile app development is a rapidly evolving field, and staying ahead of the curve is essential for businesses looking to engage users and remain competitive. In this blog post, we explore the latest trends in mobile app development and what to watch for in the coming years...",
+    tags: ["Mobile Apps", "App Development", "Tech Trends"],
+  },
+  {
+    title: "Cybersecurity Best Practices: Protecting Your Business Online",
+    date: "2023-08-22",
+    author: "Alex Johnson",
+    content:
+      "With the increasing number of cyber threats, it's crucial for businesses to prioritize cybersecurity. In this blog post, we discuss best practices to safeguard your business from online threats and data breaches...",
+    tags: ["Cybersecurity", "Data Protection", "Online Security"],
+  },
+  {
+    title:
+      "The Power of Custom Software: Tailoring Solutions for Your Business",
+    date: "2023-07-31",
+    author: "Kiwicode Team",
+    content:
+      "Off-the-shelf software solutions may not always meet the unique needs of your business. Custom software development offers a tailored approach to address specific challenges and maximize efficiency. Learn how custom software can empower your business...",
+    tags: ["Custom Software", "Business Solutions", "Software Development"],
+  },
+  {
+    title:
+      "Agile Project Management: Navigating Software Development Challenges",
+    date: "2023-07-09",
+    author: "Emily Davis",
+    content:
+      "Agile project management is a methodology that can greatly improve the success rate of software development projects. In this blog post, we explore the principles of Agile and how it helps teams adapt to change, collaborate effectively, and deliver high-quality software...",
+    tags: ["Agile", "Project Management", "Software Development"],
+  },
+  {
+    title: "The Rise of E-Commerce: Strategies for Success in Online Retail",
+    date: "2023-06-15",
+    author: "David Miller",
+    content:
+      "The e-commerce industry is booming, and success in online retail requires more than just setting up an online store. In this post, we discuss strategies and best practices to thrive in the competitive world of e-commerce...",
+    tags: ["E-Commerce", "Online Retail", "Digital Marketing"],
   },
 ];

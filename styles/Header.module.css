@@ -4,6 +4,9 @@
   position: relative;
   padding: 0;
   overflow-x: hidden;
+  background: linear-gradient(145.7deg, #000000 7.61%, rgba(0, 0, 0, 0) 79.73%), linear-gradient(229.74deg, #303072 9.39%, rgba(0, 0, 255, 0) 83.29%), linear-gradient(83.06deg, #00FFFF 2.35%, #ff00e6 94.92%);
+  max-height: 100vh;
+  overflow: hidden
 }
 
 
@@ -11,6 +14,7 @@
 .header video {
   min-width: 100%;
   min-height: 100vh;
+  max-height: 100vh;
 }
 
 
@@ -29,7 +33,16 @@
   padding: 15px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 60, 255, 0.1));
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
+
 }
+
+
+.header .content h1,
+.header .content h3 {
+  z-index: 10;
+}
+
+
 
 .header .flex {
   display: flex;
@@ -44,4 +57,78 @@
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+
+
+.star,
+.triangle,
+.circle_1,
+.circle_2 {
+  position: absolute;
+}
+
+.star {
+  clip-path: polygon(50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%);
+  height: 30px;
+  width: 30px;
+  bottom: 80px;
+  right: 80px;
+}
+
+.triangle {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  height: 25px;
+  width: 25px;
+  bottom: 250px;
+  left: 15%;
+}
+
+.triangle,
+.star {
+  background: aqua;
+}
+
+.circle_1,
+.circle_2 {
+  height: 200px;
+  width: 200px;
+  background-color: rgba(92, 68, 197, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle_1 {
+  bottom: -100px;
+  left: -70px;
+}
+
+.circle_2 {
+  bottom: 100px;
+  right: -100px;
+}
+
+.inner_cirlce_1,
+.inner_cirlce_2 {
+  border-radius: 50%;
+  background: rgb(1, 12, 42);
+  height: 170px;
+  width: 170px;
+}
+
+.profile__photo {
+  border-radius: 50%;
+  /* border: 2px solid lightgrey; */
+  overflow: hidden;
 }
