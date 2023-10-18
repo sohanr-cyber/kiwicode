@@ -32,6 +32,7 @@
     "next-seo": "^5.15.0",
     "next-sitemap": "^3.1.43",
     "nextjs-progressbar": "^0.0.14",
+    "node-vibrant": "^3.1.6",
     "react": "^17.0.2",
     "react-confetti": "^6.1.0",
     "react-dom": "^17.0.2",

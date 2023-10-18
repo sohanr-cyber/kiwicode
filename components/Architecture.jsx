@@ -3,8 +3,9 @@ import styles from "../styles/Architecture.module.css";
 import Image from "next/image";
 import { architecture } from "../data";
 import Logo from "./utils/Logo";
-
+import { useRouter } from "next/router";
 const Work = () => {
+  const router = useRouter();
   return (
     <div className={styles.work__wrapper} id="architecture">
       <Logo /> <h1>What do we do?</h1>
@@ -19,7 +20,12 @@ const Work = () => {
           </div>
         ))}
       </div>
-      <div className={styles.btn}>Contact Us</div>
+      <div
+        className={styles.btn}
+        onClick={() => router.push("mailto:sohanur25800@gmail.com")}
+      >
+        Contact Us
+      </div>
     </div>
   );
 };
