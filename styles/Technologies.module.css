@@ -1,0 +1,29 @@
+.wrapper {
+  padding: 50px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(145.7deg, #000000 7.61%, rgba(0, 0, 0, 0) 79.73%), linear-gradient(229.74deg, #303072 9.39%, rgba(0, 0, 255, 0) 83.29%), linear-gradient(83.06deg, #00FFFF 2.35%, #ff00e6 94.92%);
+  color: white;
+  text-align: center;
+}
+
+.wrapper .techs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap
+}
+
+
+.wrapper .techs .item {
+  background-color: rgb(202, 226, 248);
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  color: black;
+  min-height: 100px;
+  aspect-ratio: 1/1;
+}

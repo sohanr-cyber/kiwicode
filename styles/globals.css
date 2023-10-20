@@ -9,18 +9,16 @@ body {
 }
 
 :root {
-  --linearbg1: linear-gradient(
-    90deg,
-    rgb(53, 91, 244) 0%,
-    rgb(4, 36, 116) 100%
-  );
+  --linearbg1: linear-gradient(90deg,
+      rgb(53, 91, 244) 0%,
+      rgb(4, 36, 116) 100%);
 
   --black-blue: rgb(12, 2, 66);
   --transparent-Blue: rgb(59, 160, 255, 0.2);
   --color1: rgb(0, 183, 255);
   --color: rgb(215, 249, 250);
   --background: linear-gradient(180deg, rgb(9, 0, 58), rgb(0, 0, 136, 0.8));
-  --black:  rgb(0, 0, 30);
+  --black: rgb(0, 0, 30);
 }
 
 ::-webkit-scrollbar {
@@ -34,11 +32,10 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: aqua;
-  background: linear-gradient(
-    90deg,
-    rgb(0, 15, 77) 0%,
-    rgb(1, 55, 189) 100%
-  ); /* outline: 1px solid aqua; */
+  background: linear-gradient(90deg,
+      rgb(0, 15, 77) 0%,
+      rgb(1, 55, 189) 100%);
+  /* outline: 1px solid aqua; */
   width: 12px;
 }
 
@@ -53,6 +50,10 @@ a {
 
 table {
   border-radius: 5px;
+}
+
+h1 {
+  text-transform: capitalize;
 }
 
 @media (max-width: 570px) {

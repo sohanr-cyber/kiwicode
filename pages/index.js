@@ -16,6 +16,7 @@ import Upcomming from "../components/Upcomming";
 import News from "../components/News";
 import { NextSeo } from "next-seo";
 import Projects from "../components/Projects/Projects";
+import Technologies from "../components/Technologies";
 
 export default function Home() {
   return (
@@ -93,7 +94,7 @@ export default function Home() {
         <Reviews />
         {/* <Price /> */}
         {/* <Upcomming /> */}
-
+        <Technologies />
         <News />
 
         {/* <FAQ /> */}
