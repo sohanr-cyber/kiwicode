@@ -38,7 +38,7 @@ export default function Home() {
             "At KiwiCode, we craft custom software solutions to meet your unique business needs. Our expert team delivers cutting-edge technology and unparalleled quality.",
           images: [
             {
-              url: "https://www.kiwicode.com/kiwicode.jpg",
+              url: "/images/kiwi.png",
               width: 1200,
               height: 630,
               alt: "KiwiCode",
@@ -52,7 +52,7 @@ export default function Home() {
           title: "KiwiCode - Your Source for Innovative Software Solutions",
           description:
             "At KiwiCode, we craft custom software solutions to meet your unique business needs. Our expert team delivers cutting-edge technology and unparalleled quality.",
-          image: "https://www.kiwicode.com/kiwicode.jpg",
+          image: "/images/kiwi.png",
         }}
         jsonLd={{
           "@context": "https://schema.org",

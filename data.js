@@ -358,6 +358,25 @@ export const projects = [
     live: "https://driveclone.vercel.app/login",
     image: "/projects/drive.png",
   },
+  {
+    title: "Voting App/Polling App",
+    overview:
+      "The Voting App/Polling App is a web-based platform that allows users to create and participate in polls and surveys. It offers a user-friendly interface for creating, sharing, and voting on polls, making it easy for individuals, organizations, and communities to gather opinions and make data-driven decisions.",
+    technologiesUsed: [
+      "Nextjs for the both front end and backend",
+      "JWT for Authentication and Authorization",
+      "MongoDB for data storage",
+      "Recharts for interactive data visualization",
+    ],
+    keyFeatures: [
+      "Create and customize polls with various options",
+      "User authentication and authorization",
+      "Interactive and responsive design for a seamless user experience",
+    ],
+    git: "https://github.com/sohanr-cyber/voting",
+    live: "https://voting-kappa.vercel.app/",
+    image: "/images/poll.jpeg",
+  },
 ];
 
 export const blogs = [
