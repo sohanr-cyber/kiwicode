@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import styles from "../../styles/utils/Logo.module.css";
 import { motion } from "framer-motion";
-const title = "Kiwi Code";
+const title = "Quince";
 const colors = [
   "crimson",
   "yellowgreen",

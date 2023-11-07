@@ -8,7 +8,7 @@ const Reviews = () => {
     <>
       {" "}
       <div className={styles.wrapper} id="reviews">
-        <h1>What Clients Say About KiwiCode</h1>
+        <h1>What Clients Say About Quince</h1>
         <div className={styles.flex}>
           {reviews.map((review) => (
             <div className={styles.card}>

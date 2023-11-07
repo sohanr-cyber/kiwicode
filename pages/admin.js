@@ -6,9 +6,9 @@ import Navbar from "../components/Navbar";
 const admin = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Dashboard />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

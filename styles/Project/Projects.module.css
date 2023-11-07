@@ -6,9 +6,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: linear-gradient(180deg, rgb(9, 0, 58), rgb(0, 0, 136, 0.8));
-    color: white;
+    /* background: linear-gradient(180deg, rgb(9, 0, 58), rgb(0, 0, 136, 0.8)); */
 }
+
+
 
 
 @media (max-width:720px) {

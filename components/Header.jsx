@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 const welcomeData =
   "Code Your Way to Success Where Attractiveness Meets Effectiveness";
 const welcomePData =
-  "At KiwiCode we're passionate about creating innovative and cutting-edge software solutions. Our mission is to transform your ideas into reality, providing you with software that not only meets your needs but exceeds your expectations.";
+  "At Quince we're passionate about creating innovative and cutting-edge software solutions. Our mission is to transform your ideas into reality, providing you with software that not only meets your needs but exceeds your expectations.";
 const welcomeP2Data =
   "Discover Our Services and Reach Out Today to Explore How We Can Elevate Your Success";
 const Header = () => {

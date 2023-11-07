@@ -7,12 +7,12 @@ import Footer from "../components/Footer";
 const Register = () => {
   return (
     <div className={styles.container}>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className={styles.flex}>
         <Introduction />
         <RegistrationForm login={true} />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

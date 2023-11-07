@@ -9,10 +9,10 @@ const Project = ({ p, index }) => {
 
   useEffect(() => {
     vibrant.from(p.image).getPalette((err, palette) => {
-      // const colors = palette.Vibrant._rgb;
+      const colors = palette.Vibrant._rgb;
       // const colors = palette.DarkMuted._rgb;
       // const colors = palette.LightMuted._rgb;
-      const colors = palette.LightVibrant._rgb;
+      // const colors = palette.LightVibrant._rgb;
       // const colors = palette.Muted._rgb;
 
       console.log(palette);

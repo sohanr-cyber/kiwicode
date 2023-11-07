@@ -3,8 +3,10 @@ import styles from "../styles/Footer.module.css";
 import Image from "next/image";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 import Logo from "./utils/Logo";
+import { useRouter } from "next/router";
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <div className={styles.wrapper} id="footer">
       <div className={styles.grid}>
@@ -54,18 +56,20 @@ const Footer = () => {
         </div>
         <div className={styles.right}>
           <h3 className={styles.heading}>
-            <h4>About Kiwicode</h4>
+            <h4>About Quince</h4>
           </h3>
           <p>
-            Kiwicode is a leading software development company that specializes
-            in delivering innovative solutions tailored to your business needs.
+            Quince is a leading software development company that specializes in
+            delivering innovative solutions tailored to your business needs.
             With a commitment to excellence, we are dedicated to helping
             businesses thrive in the digital age.
           </p>
 
           <div className={styles.flex}>
-            <span>Terms & Condition</span>
-            <span>Privacy</span>
+            <span onClick={() => router.push("/terms-and-conditions")}>
+              Terms & Condition
+            </span>
+            <span onClick={() => router.push("/privacy-policy")}>Privacy</span>
           </div>
         </div>
       </div>

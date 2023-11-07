@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "../styles/Benifits.module.css";
 import Image from "next/image";
-import { benifits } from "../data";
+import { hireUsBenefits } from "../data";
 
 const Benifit = () => {
   return (
     <div className={styles.wrapper} id="benifit">
-      <h1>Benefits of Joining – InvestHere Family</h1>
+      <h1>Benefits of Hiring Us</h1>
       {/* <p className={styles.description}>
         Get up to 80 highly professional crypto trading signals every month on
         telegram for Binance or Bitmex and Bybit exchange. All the ParadiseVIP
@@ -18,7 +18,7 @@ const Benifit = () => {
       <p></p>
 
       <div className={styles.benifits}>
-        {benifits.map((benifit, index) => (
+        {hireUsBenefits.map((benifit, index) => (
           <div className={styles.benifit}>
             <div className={styles.title}>
               <span>
@@ -35,13 +35,6 @@ const Benifit = () => {
           </div>
         ))}
       </div>
-
-      <p className={styles.description}>
-        Don't miss out on the opportunity to grow your wealth with Avocado. By
-        joining us, you can access expert investment advice, a wide range of
-        investment products, competitive returns, and a convenient and secure
-        platform. Sign up now and start achieving your financial goals today
-      </p>
     </div>
   );
 };

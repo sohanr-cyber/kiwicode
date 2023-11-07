@@ -28,44 +28,44 @@ export default function Home() {
       </Head>
 
       <NextSeo
-        title="KiwiCode - Your Source for Innovative Software Solutions"
-        description="At KiwiCode, we craft custom software solutions to meet your unique business needs. Our expert team delivers cutting-edge technology and unparalleled quality."
+        title="Quince - Your Source for Innovative Software Solutions"
+        description="At Quince, we craft custom software solutions to meet your unique business needs. Our expert team delivers cutting-edge technology and unparalleled quality."
         openGraph={{
           type: "website",
-          url: "https://www.kiwicode.com",
-          title: "KiwiCode - Your Source for Innovative Software Solutions",
+          url: "https://www.Quince.com",
+          title: "Quince - Your Source for Innovative Software Solutions",
           description:
-            "At KiwiCode, we craft custom software solutions to meet your unique business needs. Our expert team delivers cutting-edge technology and unparalleled quality.",
+            "At Quince, we craft custom software solutions to meet your unique business needs. Our expert team delivers cutting-edge technology and unparalleled quality.",
           images: [
             {
               url: "/images/kiwi.png",
               width: 1200,
               height: 630,
-              alt: "KiwiCode",
+              alt: "Quince",
             },
           ],
         }}
         twitter={{
-          handle: "@KiwiCode",
-          site: "@KiwiCode",
+          handle: "@Quince",
+          site: "@Quince",
           cardType: "summary_large_image",
-          title: "KiwiCode - Your Source for Innovative Software Solutions",
+          title: "Quince - Your Source for Innovative Software Solutions",
           description:
-            "At KiwiCode, we craft custom software solutions to meet your unique business needs. Our expert team delivers cutting-edge technology and unparalleled quality.",
+            "At Quince, we craft custom software solutions to meet your unique business needs. Our expert team delivers cutting-edge technology and unparalleled quality.",
           image: "/images/kiwi.png",
         }}
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "KiwiCode",
-          legalName: "KiwiCode Software Solutions, Inc.",
-          url: "https://www.kiwicode.com",
-          logo: "https://www.kiwicode.com/kiwicode.jpg",
+          name: "Quince",
+          legalName: "Quince Software Solutions, Inc.",
+          url: "https://www.Quince.com",
+          logo: "https://www.Quince.com/Quince.jpg",
           foundingDate: "Year Founded",
           sameAs: [
-            "https://www.facebook.com/KiwiCode",
-            "https://twitter.com/KiwiCode",
-            "https://www.linkedin.com/company/kiwicode",
+            "https://www.facebook.com/Quince",
+            "https://twitter.com/Quince",
+            "https://www.linkedin.com/company/Quince",
           ],
           address: {
             "@type": "PostalAddress",
@@ -81,24 +81,22 @@ export default function Home() {
             contactType: "customer service",
           },
           description:
-            "At KiwiCode, we craft custom software solutions to meet your unique business needs. Our expert team delivers cutting-edge technology and unparalleled quality.",
+            "At Quince, we craft custom software solutions to meet your unique business needs. Our expert team delivers cutting-edge technology and unparalleled quality.",
         }}
       />
 
       <main className={styles.main}>
-        <Navbar id="home" />
+        {/* <Navbar id="home" /> */}
         <Header />
         <Architecture />
-        {/* <Benifit /> */}
+        <Benifit />
         <Projects />
-        <Reviews />
-        {/* <Price /> */}
-        {/* <Upcomming /> */}
         <Technologies />
-        <News />
 
-        {/* <FAQ /> */}
-        <Footer />
+        <Reviews />
+
+        <FAQ />
+        {/* <Footer /> */}
         {/* <Chat /> */}
       </main>
 
