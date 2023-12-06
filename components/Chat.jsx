@@ -15,11 +15,10 @@ const Chat = () => {
         <div className={styles.chat__link}>
           <div
             className={styles.icon}
-            onClick={() => router.push(user ? "?chat=true" : "?auth=true")}
+            onClick={() => router.push("http://Wa.me/+8801744329811")}
           >
-            <div className={styles.chat}>Chat with One Of Our Admin</div>
             <Image
-              src="https://cdn-icons-png.flaticon.com/128/684/684849.png"
+              src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png"
               width="35px"
               height="35px"
               alt="inst"

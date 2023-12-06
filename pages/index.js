@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-
 import styles from "../styles/Home.module.css";
 import axios from "axios";
 import Navbar from "../components/Navbar";
@@ -10,10 +9,7 @@ import Benifit from "../components/Benifit";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import Reviews from "../components/Reviews";
-import Price from "../components/Price";
-import Chat from "../components/Chat";
-import Upcomming from "../components/Upcomming";
-import News from "../components/News";
+
 import { NextSeo } from "next-seo";
 import Projects from "../components/Projects/Projects";
 import Technologies from "../components/Technologies";
