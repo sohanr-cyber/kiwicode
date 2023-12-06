@@ -1,0 +1,44 @@
+.wrapper {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(22, 22, 22, 0.1);
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.container {
+    background-color: white;
+    min-height: 400px;
+    min-width: 500px;
+    position: relative;
+}
+
+.container span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    padding: 5px 9px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .google__auth {
+    background-color: green;
+    color: white;
+    max-width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+}

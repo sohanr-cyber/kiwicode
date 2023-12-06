@@ -6,7 +6,7 @@ import vibrant from "node-vibrant";
 const Project = ({ p, index }) => {
   const [imageDominantColor, setImageDominantColor] = useState(null);
   const router = useRouter();
-
+  const [surfaceColor, setSurfaceColor] = useState();
   useEffect(() => {
     vibrant.from(p.image).getPalette((err, palette) => {
       const colors = palette.Vibrant._rgb;
@@ -17,16 +17,36 @@ const Project = ({ p, index }) => {
 
       console.log(palette);
       console.log(colors);
-      setImageDominantColor(`rgb(${colors[0]},${colors[1]}, ${colors[2]},0.4)`);
+      setSurfaceColor(`rgb(${colors[0]},${colors[1]}, ${colors[2]},0.5)`);
+      setImageDominantColor(`rgb(${colors[0]},${colors[1]}, ${colors[2]},0.2)`);
     });
   }, [p]);
 
   return (
     <div
       className={styles.container}
-      style={index % 2 != 0 ? { flexDirection: "row-reverse" } : {}}
+      style={
+        index % 2 != 0
+          ? {
+              flexDirection: "row-reverse",
+              boxShadow: `2px 2px 2px 2px ${imageDominantColor}`,
+            }
+          : {
+              boxShadow: `2px 2px 2px 2px ${imageDominantColor}`,
+            }
+      }
     >
       <div className={styles.left}>
+        <div
+          className={styles.surface}
+          style={
+            surfaceColor
+              ? {
+                  background: `linear-gradient(360deg , ${surfaceColor}, rgb(0 , 0 , 0 , 0))`,
+                }
+              : {}
+          }
+        ></div>
         {p.image ? (
           <Image
             src={p.image}

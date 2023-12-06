@@ -1,0 +1,11 @@
+.wrapper {
+    background: linear-gradient(145.7deg, #000000 7.61%, rgba(0, 0, 0, 0) 79.73%), linear-gradient(229.74deg, #303072 9.39%, rgba(0, 0, 255, 0) 83.29%), linear-gradient(83.06deg, #00FFFF 2.35%, #ff00e6 94.92%);
+    min-height: 50PX;
+    color: white;
+    padding: 10px 15px;
+}
+
+.wrapper .heading {
+    font-size: 140%;
+    font-weight: bold;
+}

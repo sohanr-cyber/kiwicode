@@ -4,12 +4,22 @@
   position: relative;
   padding: 0;
   overflow-x: hidden;
-  background: linear-gradient(145.7deg, #000000 7.61%, rgba(0, 0, 0, 0) 79.73%), linear-gradient(229.74deg, #303072 9.39%, rgba(0, 0, 255, 0) 83.29%), linear-gradient(83.06deg, #00FFFF 2.35%, #ff00e6 94.92%);
+  background: linear-gradient(145.7deg, rgb(0, 0, 0) 7.61%, rgba(0, 0, 0, 0) 79.73%), linear-gradient(229.74deg, rgb(48, 48, 114) 9.39%, rgba(0, 0, 255, 0) 83.29%), linear-gradient(83.06deg, #00FFFF 2.35%, #ff00e6 94.92%);
   max-height: 100vh;
-  overflow: hidden
+  overflow: hidden;
 }
 
 
+
+.surface {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(145.7deg, rgb(0, 0, 0, 0.4) 7.61%, rgba(0, 0, 0, 0.4) 79.73%), linear-gradient(229.74deg, rgb(48, 48, 114, 0.4) 9.39%, rgba(0, 52, 164, 0.4) 83.29%), linear-gradient(83.06deg, rgb(0, 255, 255, 0.4) 2.35%, rgb(255, 0, 230, 0.4) 94.92%);
+
+}
 
 .header video {
   min-width: 100%;
@@ -31,8 +41,8 @@
   flex-direction: column;
   color: aliceblue;
   padding: 15px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 60, 255, 0.1));
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 60, 255, 0.1)); */
+  /* text-shadow: 2px 2px 2px rgb(0, 0, 0); */
 
 }
 
@@ -57,6 +67,7 @@
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+  z-index: 3;
 }
 
 
@@ -95,7 +106,7 @@
 
 .triangle,
 .star {
-  background: aqua;
+  background: rgb(0, 255, 255);
 }
 
 .circle_1,
@@ -131,4 +142,19 @@
   border-radius: 50%;
   /* border: 2px solid lightgrey; */
   overflow: hidden;
+}
+
+
+
+
+@media (max-width: 570px) {
+  .header {
+    padding: 30px 15px;
+    text-align: left
+  }
+
+  .header .content {
+    align-items: flex-start;
+  }
+
 }

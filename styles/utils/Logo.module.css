@@ -3,9 +3,9 @@
   font-weight: bold;
   color: yellowgreen;
   cursor: pointer;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .container span {

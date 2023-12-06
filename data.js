@@ -208,35 +208,6 @@ export const Faqs = [
   },
 ];
 
-
-export const benifits = [
-  {
-    title: "Expert advicet",
-    details:
-      " Our team of expert advisors is here to help you make informed investment decisions and maximize your returns. We have years of experience in the investment industry and are dedicated to helping you achieve your financial goals.",
-  },
-  {
-    title: "Wide range of investment products",
-    details:
-      "We offer a wide range of investment products, including stocks, bonds, mutual funds, and more, to help you diversify your portfolio and manage risk.",
-  },
-  {
-    title: "Competitive returns",
-    details:
-      "We strive to offer competitive returns on our investment products, so you can earn more on your money",
-  },
-  {
-    title: "Simplicity and convenience",
-    details:
-      "We make it easy for you to invest with us, with a simple online platform and 24/7 customer support.",
-  },
-  {
-    title: "Security and trust:",
-    details:
-      "We take the security of your investment and personal information seriously, and are committed to maintaining the highest standards of trust and transparency",
-  },
-];
-
 export const projects = [
   {
     title: "Gradient Color Generator",
@@ -328,16 +299,80 @@ export const projects = [
   },
 ];
 
+export const websiteTypes = [
+  {
+    type: "Business-Centric Websites",
+    images: [
+      "https://img.freepik.com/free-photo/modern-monitor-elegant-table_23-2150706419.jpg?t=st=1701859063~exp=1701862663~hmac=616a7225767bfc07ebeddc5831ab9c6c44c28d828a8308c7c051ac8bc9e1aba4&w=900",
+      "https://img.freepik.com/free-photo/modern-monitor-elegant-table_23-2150706427.jpg?t=st=1701860126~exp=1701863726~hmac=10458a8d5afe7d9cb75066f7aa71af18feb3dc386d9841a8bbe81f44e80f2c74&w=900",
+    ],
+    description:
+      "Elevate your brand with a powerful online presence. We design and develop intuitive business websites that captivate audiences, delivering key information, services, and brand narratives with precision and style.",
+  },
+  {
+    type: "E-commerce Excellence",
+    images: [
+      "https://img.freepik.com/free-psd/american-food-style-stationery_23-2148473308.jpg?size=626&ext=jpg&ga=GA1.1.606845941.1672217575&semt=sph",
+      "https://img.freepik.com/premium-vector/web-development-concept-isometric-landing-page-team-develops-optimizes-layout-site_9209-7568.jpg?w=996",
+      "https://img.freepik.com/free-vector/shopping-online-landing-page_23-2148532152.jpg?w=900&t=st=1701859694~exp=1701860294~hmac=3267abc8c2b465ea927634150717365e16581eb16bb13bd62c4f1284b06b7252",
+    ],
+    description:
+      "Enter the world of online commerce with confidence. Our e-commerce solutions seamlessly integrate stunning design with robust functionality, providing a secure and user-friendly shopping experience for your customers.",
+  },
+  {
+    type: "Creative Portfolios",
+    images: [
+      "https://img.freepik.com/premium-psd/photography-online-course-landing-page-website-template-dark-mode_294843-76.jpg?w=1060",
+    ],
+    description:
+      "For the creatives and visionaries, we craft visually striking portfolios that showcase your talent and expertise. Let your work speak volumes through our captivating and responsive designs.",
+  },
+  {
+    type: "Blogs and Content Platforms",
+    images: [
+      "https://img.freepik.com/premium-photo/business-technology-media-internet-people-concept-close-up-woman-with-blog-web-page-tablet-pc-computer-screen-coffee-wooden-table_380164-146500.jpg?w=900",
+    ],
+    description:
+      "Fuel your content strategy with purpose. Our expertise in creating dynamic blogging and content platforms ensures your voice is heard in a cluttered digital space, captivating audiences with engaging content and seamless navigation.",
+  },
+  {
+    type: "Educational Empowerment",
+    images: [
+      "https://img.freepik.com/premium-photo/e-learning-student-university-conceptual_31965-18218.jpg?w=1060",
+      "https://img.freepik.com/free-vector/online-education-landing-page_52683-3038.jpg?size=626&ext=jpg&ga=GA1.1.606845941.1672217575&semt=ais",
+    ],
+    description:
+      "Empower learners with interactive and engaging educational websites. Whether you're an institution or an individual educator, we create intuitive platforms for knowledge sharing and growth.",
+  },
+  {
+    type: "Community Connections",
+    images: [
+      "https://img.freepik.com/premium-vector/simple-ui-design-chat-mobile-app_490632-177.jpg?w=996",
+      "https://img.freepik.com/premium-vector/online-banking-modern-neumorphic-design-ui-mobile-app_9209-4505.jpg?w=900",
+    ],
+    description:
+      "Foster connections and conversations with community-driven websites. Engage your audience, facilitate discussions, and build vibrant online communities with our tailored solutions.",
+  },
+  {
+    type: "Non-Profit Impact",
+    images: [
+      "https://img.freepik.com/free-vector/set-modern-website-landing-page-design-templates-mobile-phone-tablet-with-gallery-articles-contact-form-flat-isolated-illustration_1284-60948.jpg?w=740&t=st=1701860931~exp=1701861531~hmac=a113100f118bbe58309908ffd5bc61e901d11b003f3a38b89b0d78154c5f9675",
+    ],
+    description:
+      "Make a difference with an impactful online presence. Our websites for non-profits and NGOs amplify your cause, driving awareness and support for your mission.",
+  },
+];
+
 export const hireUsBenefits = [
   {
     title: "Expert Development Team",
     details:
-      "Our experienced team of software developers is here to provide you with expert solutions tailored to your unique needs. We have a wealth of knowledge in the field and are dedicated to helping you achieve your project goals.",
+      "Quince is a remote-first company, with team members located across the globe. This allows us to access the best talent and keep our overhead low, ultimately benefiting our clients.",
   },
   {
     title: "Full Spectrum of Services",
     details:
-      "Quince offers a comprehensive suite of services, including web and mobile app development, UI/UX design, and software consulting, ensuring we meet all your software development needs under one roof.",
+      "Quince offers a comprehensive suite of services, including web development, UI/UX design, and software consulting, ensuring we meet all your software development needs under one roof.",
   },
   {
     title: "Quality Assurance",

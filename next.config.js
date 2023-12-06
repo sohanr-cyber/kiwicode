@@ -9,6 +9,8 @@ const nextConfig = {
       "upload.wikimedia.org",
       "cdn.jsdelivr.net",
       "img.icons8.com",
+      "picsum.photos",
+      "img.freepik.com",
     ],
   },
 };

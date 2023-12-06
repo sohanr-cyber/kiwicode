@@ -1,5 +1,5 @@
 .wrapper {
-    padding: 50px;
+    padding: 50px 25px;
     min-height: 100vh;
     text-align: center;
     display: flex;
@@ -27,4 +27,12 @@
     .wrapper {
         padding: 50px 15px
     }
+}
+
+@media (max-width: 570px) {
+    .wrapper {
+        padding: 30px 15px;
+        text-align: left
+    }
+
 }

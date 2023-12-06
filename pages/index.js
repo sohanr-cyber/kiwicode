@@ -17,6 +17,7 @@ import News from "../components/News";
 import { NextSeo } from "next-seo";
 import Projects from "../components/Projects/Projects";
 import Technologies from "../components/Technologies";
+import WebsiteTypes from "../components/WebSiteTypes/WebsiteTypes";
 
 export default function Home() {
   return (
@@ -89,15 +90,13 @@ export default function Home() {
         {/* <Navbar id="home" /> */}
         <Header />
         <Architecture />
-        <Benifit />
+        <WebsiteTypes />
         <Projects />
-        <Technologies />
+        <Benifit /> <Technologies />
+        {/* <Reviews />
 
-        <Reviews />
-
-        <FAQ />
+        <FAQ /> */}
         {/* <Footer /> */}
-        {/* <Chat /> */}
       </main>
 
       <footer className={styles.footer}></footer>

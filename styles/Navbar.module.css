@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(9, 0, 58);
   color: white;
   position: fixed;
   top: 0;
@@ -91,7 +90,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgb(12, 2, 66);
+    background-color: var(--black);
     color: white;
     padding: 10px;
     height: 100%;
@@ -106,7 +105,7 @@
   .nav__vertical .nav__right {
     display: flex;
     flex-direction: column;
-    background-color: rgb(12, 2, 66);
+    background-color: var(--black);
     color: white;
     padding: 10px;
   }

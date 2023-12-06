@@ -22,12 +22,12 @@ const Logo = ({ dyanamic }) => {
       {title.split("").map((char, index) =>
         dyanamic ? (
           <motion.span
-            initial={{ opacity: 0, y: -20000, x: 20000 }}
+            initial={{ opacity: 0, y: -2000, x: 2000 }}
             animate={{
               opacity: 1,
               y: 0,
               x: 0,
-              transition: { duration: 8.5 + index * 0.25 },
+              transition: { duration: 2 + index * 0.25 },
             }}
             style={char == "o" ? { color: "orange" } : { color: colors[index] }}
           >

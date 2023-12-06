@@ -1,0 +1,16 @@
+.messages {
+    background-color: black;
+    height: 100%;
+    color: white;
+    overflow-y: scroll;
+}
+
+.message {
+    padding: 10px;
+    display: flex;
+    gap: 5px
+}
+
+.message img {
+    border-radius: 5px;
+}

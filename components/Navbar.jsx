@@ -25,11 +25,11 @@ const Navbar = () => {
   const user = false;
   return (
     <motion.div
-      initial={{ opacity: 0, y: -2000 }}
+      initial={{ opacity: 0, y: -600 }}
       animate={{
         opacity: 1,
         y: 0,
-        transition: { duration: 10 },
+        transition: { duration: 1.6 },
       }}
       className={styles.navbar}
     >
@@ -38,11 +38,11 @@ const Navbar = () => {
       </div>
 
       <motion.div
-        initial={{ opacity: 0, y: -20000 }}
+        initial={{ opacity: 0, y: -2000 }}
         animate={{
           opacity: 1,
           y: 0,
-          transition: { duration: 12 },
+          transition: { duration: 3.5 },
         }}
         className={styles.nav__items}
       >
@@ -74,7 +74,7 @@ const Navbar = () => {
         animate={{
           opacity: 1,
           y: 0,
-          transition: { duration: 13 },
+          transition: { duration: 3.8 },
         }}
       >
         <div className={styles.profile}>

@@ -7,7 +7,7 @@ import { QuincePrivacyPolicy } from "../data";
 const TermsAndConditions = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className={styles.wrapper}>
         <h1>Quince - Privacy Policy</h1>
         <p>
@@ -29,7 +29,7 @@ const TermsAndConditions = () => {
           </>
         ))}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
