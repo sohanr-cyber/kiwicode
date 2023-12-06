@@ -13,7 +13,7 @@ import Reviews from "../components/Reviews";
 import { NextSeo } from "next-seo";
 import Projects from "../components/Projects/Projects";
 import Technologies from "../components/Technologies";
-import WebsiteTypes from "../components/WebSiteTypes/WebsiteTypes";
+import WebsiteTypes from "../components/WebsiteTypes/WebsiteTypes";
 
 export default function Home() {
   return (
