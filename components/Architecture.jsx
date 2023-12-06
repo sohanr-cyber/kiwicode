@@ -4,19 +4,33 @@ import Image from "next/image";
 import { architecture } from "../data";
 import Logo from "./utils/Logo";
 import { useRouter } from "next/router";
+const colors = [
+  "rgb(255, 0, 0, 0.1)",
+  "rgb(0, 129, 0, 0.1)",
+  "rgb(255, 255, 0, 0.1)",
+  "rgb(131, 0, 131, 0.1)",
+];
 const Work = () => {
   const router = useRouter();
   return (
-    <div className={styles.work__wrapper} id="architecture">
+    <div className={styles.work__wrapper} id="service">
       <Logo /> <h1>What do we do?</h1>
       <div className={styles.grid}>
-        {architecture.map((item) => (
-          <div className={styles.item}>
+        {architecture.map((item, index) => (
+          <div
+            className={styles.item}
+            style={{
+              backgroundColor: `${colors[index]}`,
+              boxShadow: `1px 1px 1px 1px ${colors[index]}`,
+            }}
+          >
             <div className={styles.icon}>
-              <Image src={item.icon} width="35px" height="35px" alt="" />
+              <Image src={item.icon} width="55px" height="55px" alt="" />
             </div>
-            <h4 className={styles.title}>{item.title}</h4>
-            <div className={styles.detail}>{item.details}</div>
+            <div className={styles.left}>
+              <div className={styles.title}>{item.title}</div>
+              <div className={styles.detail}>{item.details}</div>
+            </div>
           </div>
         ))}
       </div>

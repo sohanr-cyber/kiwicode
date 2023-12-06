@@ -6,7 +6,7 @@ import WebsiteType from "./WebsiteType";
 
 const WebsiteTypes = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="websites">
       <h1>What Types of Website We will Build for you</h1>
       <p>
         At Quince, we're architects of the digital realm, creating immersive and

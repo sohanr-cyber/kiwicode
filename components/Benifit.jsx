@@ -7,14 +7,7 @@ const Benifit = () => {
   return (
     <div className={styles.wrapper} id="benifit">
       <h1>Benefits of Hiring Us</h1>
-      {/* <p className={styles.description}>
-        Get up to 80 highly professional crypto trading signals every month on
-        telegram for Binance or Bitmex and Bybit exchange. All the ParadiseVIP
-        crypto trading calls are made by our Paradise Team and are based on
-        technical and fundamental analysis. Our Paradise Team are sharing their
-        crypto trades with you, so grab the opportunity and start trading
-        cryptocurrency like a pro today!
-      </p> */}
+   
       <p></p>
 
       <div className={styles.benifits}>

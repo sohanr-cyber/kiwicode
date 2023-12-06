@@ -40,6 +40,8 @@
 @media (max-width: 570px) {
   .wrapper {
     padding: 30px 15px;
+    text-align: left;
+    align-items: flex-start
   }
 
   .benifits {

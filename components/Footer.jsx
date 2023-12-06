@@ -12,19 +12,19 @@ const routes = [
   ],
   [
     { title: "Contact", route: "/" },
-    { title: "Projects", route: "/#projects" },
+    { title: "Projects", route: "#projects" },
   ],
 
   [
-    { title: "service", route: "/#service" },
-    { title: "websites", route: "/#website" },
+    { title: "service", route: "#service" },
+    { title: "websites", route: "#website" },
   ],
   [
     { title: "Technologies", route: "/#technologies" },
-    { title: "Privacy Policy ", route: "/#website" },
+    { title: "Privacy Policy ", route: "/privacy-policy" },
   ],
   [
-    { title: "Terms and Condition", route: "/terms-and-condition" },
+    { title: "Terms and Condition", route: "/terms-and-conditions" },
     { title: "Career", route: "/" },
   ],
 ];
