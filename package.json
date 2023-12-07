@@ -51,6 +51,7 @@
     "recharts": "^2.0.9",
     "request-ip": "^3.3.0",
     "send-crypto": "^0.2.38",
+    "slugify": "^1.6.6",
     "web3": "^4.1.2"
   },
   "devDependencies": {

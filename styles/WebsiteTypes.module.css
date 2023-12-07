@@ -58,7 +58,15 @@
     height: 100%;
 }
 
-
+.btn {
+    padding: 5px 9px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgb(0, 153, 255), rgb(255, 89, 252));
+    display: inline-block;
+    margin: 10px 0;
+    color: white;
+    cursor: pointer;
+}
 
 @media (max-width: 570px) {
     .wrapper {

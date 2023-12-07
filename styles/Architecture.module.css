@@ -1,13 +1,12 @@
 .work__wrapper {
-  padding: 50px;
+  padding: 50px 25px;
+  ;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  gap: 15px;
   min-height: 90vh;
-  margin: 10px 0;
 }
 
 .grid {
@@ -56,6 +55,7 @@
   text-transform: uppercase;
   cursor: pointer;
   color: white;
+  margin-top: 10px;
 }
 
 @media (max-width: 570px) {

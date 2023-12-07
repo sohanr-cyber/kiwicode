@@ -25,16 +25,7 @@ const Project = ({ p, index }) => {
   return (
     <div
       className={styles.container}
-      style={
-        index % 2 != 0
-          ? {
-              flexDirection: "row-reverse",
-              boxShadow: `2px 2px 2px 2px ${imageDominantColor}`,
-            }
-          : {
-              boxShadow: `2px 2px 2px 2px ${imageDominantColor}`,
-            }
-      }
+      style={{ boxShadow: `2px 2px 2px 2px ${imageDominantColor}` }}
     >
       <div className={styles.left}>
         <div

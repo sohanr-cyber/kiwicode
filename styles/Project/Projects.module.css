@@ -10,6 +10,15 @@
 }
 
 
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    overflow-x: scroll;
+    width: 100%;
+}
+
 
 
 @media (max-width:720px) {

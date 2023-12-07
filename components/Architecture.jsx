@@ -15,6 +15,10 @@ const Work = () => {
   return (
     <div className={styles.work__wrapper} id="service">
       <Logo /> <h1>What do we do?</h1>
+      <p>
+        Quince offers a comprehensive suite of services tailored to elevate your
+        digital presence and ensure sustained success
+      </p>
       <div className={styles.grid}>
         {architecture.map((item, index) => (
           <div

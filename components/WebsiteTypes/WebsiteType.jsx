@@ -3,12 +3,11 @@ import styles from "../../styles/WebsiteTypes.module.css";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Vibrant from "node-vibrant";
-
+import slugify from "slugify";
 const WebsiteType = ({ item, index }) => {
   const [imageDominantColor, setImageDominantColor] = useState(null);
   const router = useRouter();
   const [surfaceColor, setSurfaceColor] = useState();
-
   return (
     <div
       className={styles.item}
@@ -44,6 +43,12 @@ const WebsiteType = ({ item, index }) => {
           {item.description.length > 150
             ? `${item.description.substring(0, 150)}...`
             : item.description}
+        </div>
+        <div
+          className={styles.btn}
+          onClick={() => router.push(`/websiteType/${slugify(item.type)}`)}
+        >
+          Learn More
         </div>
       </div>
     </div>
