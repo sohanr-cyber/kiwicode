@@ -1,57 +1,57 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
-import styles from "../styles/Header.module.css";
-import { motion } from "framer-motion";
-import { useRouter } from "next/router";
+import React from 'react'
+import { useEffect } from 'react'
+import { useState } from 'react'
+import styles from '../styles/Header.module.css'
+import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
 const welcomeData =
-  "Code Your Way to Success Where Attractiveness Meets Effectiveness";
+  'Code Your Way to Success Where Attractiveness Meets Effectiveness'
 const welcomePData =
-  "At Quince we're passionate about creating innovative and cutting-edge software solutions. Our mission is to transform your ideas into reality, providing you with software that not only meets your needs but exceeds your expectations.";
+  "At Quince we're passionate about creating innovative and cutting-edge software solutions. Our mission is to transform your ideas into reality, providing you with software that not only meets your needs but exceeds your expectations."
 const welcomeP2Data =
-  "Discover Our Services and Reach Out Today to Explore How We Can Elevate Your Success";
+  'Discover Our Services and Reach Out Today to Explore How We Can Elevate Your Success'
 
 const backgrounds = [
-  "https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  "https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  "https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg",
-  "https://images.pexels.com/photos/167259/pexels-photo-167259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  "https://images.pexels.com/photos/6476595/pexels-photo-6476595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-];
+  'https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  'https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  'https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg',
+  'https://images.pexels.com/photos/167259/pexels-photo-167259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  'https://images.pexels.com/photos/6476595/pexels-photo-6476595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+]
 
 const Header = () => {
-  const router = useRouter();
-  const [backgroundIndex, setBackgroundIndex] = useState(0);
+  const router = useRouter()
+  const [backgroundIndex, setBackgroundIndex] = useState(0)
 
   useEffect(() => {
     const interval = setInterval(() => {
       // Increment the background index to change the picture
-      setBackgroundIndex((prevIndex) => (prevIndex + 1) % backgrounds.length);
-    }, 5000); // Change background every 5 seconds (5000 milliseconds)
+      setBackgroundIndex(prevIndex => (prevIndex + 1) % backgrounds.length)
+    }, 5000) // Change background every 5 seconds (5000 milliseconds)
 
-    return () => clearInterval(interval);
-  }, [backgroundIndex, backgrounds.length]);
+    return () => clearInterval(interval)
+  }, [backgroundIndex, backgrounds.length])
   const parentVariants = {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.3,
-      },
-    },
-  };
+        staggerChildren: 0.3
+      }
+    }
+  }
   const childVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  };
+    visible: { opacity: 1 }
+  }
 
   return (
     <div
       className={styles.header}
-      id="header"
+      id='header'
       style={{
         backgroundImage: `url("${backgrounds[backgroundIndex]}")`,
-        backgroundPosition: "center",
+        backgroundPosition: 'center'
       }}
     >
       <div className={styles.surface}></div>
@@ -60,8 +60,8 @@ const Header = () => {
       </video> */}
       <motion.div
         className={styles.content}
-        initial="hidden"
-        animate="visible"
+        initial='hidden'
+        animate='visible'
         variants={parentVariants}
       >
         <motion.h1
@@ -80,20 +80,20 @@ const Header = () => {
           initial={{ opacity: 0, y: 20000 }}
           animate={{
             opacity: 1,
-            y: 0,
+            y: 0
           }}
           transition={{ duration: 5 }}
           className={styles.btn}
-          onClick={() => router.push("/#projects")}
+          onClick={() => router.push('http://m.me/61563280450815')}
         >
-          See Our Project
+          Contact Us
         </motion.div>
-      </motion.div>{" "}
+      </motion.div>{' '}
       <motion.div
         initial={{ opacity: 0, y: -20000 }}
         animate={{
           opacity: 1,
-          y: 0,
+          y: 0
         }}
         transition={{ duration: 4 }}
         className={styles.star}
@@ -102,7 +102,7 @@ const Header = () => {
         initial={{ opacity: 0, y: -20000 }}
         animate={{
           opacity: 1,
-          y: 0,
+          y: 0
         }}
         transition={{ duration: 4.3 }}
         className={styles.triangle}
@@ -111,7 +111,7 @@ const Header = () => {
         initial={{ opacity: 0, x: -20000 }}
         animate={{
           opacity: 1,
-          x: 0,
+          x: 0
         }}
         transition={{ duration: 4.5 }}
         className={styles.circle_1}
@@ -122,7 +122,7 @@ const Header = () => {
         initial={{ opacity: 0, x: 20000 }}
         animate={{
           opacity: 1,
-          x: 0,
+          x: 0
         }}
         transition={{ duration: 4.8 }}
         className={styles.circle_2}
@@ -130,7 +130,7 @@ const Header = () => {
         <div className={styles.inner_cirlce_1}></div>
       </motion.div>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
