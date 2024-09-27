@@ -10,7 +10,7 @@ const welcomeData =
 const welcomePData =
   "At Quince we're passionate about creating innovative and cutting-edge software solutions. Our mission is to transform your ideas into reality, providing you with software that not only meets your needs but exceeds your expectations."
 const welcomeP2Data =
-  'Discover Our Services and Reach Out Today to Explore How We Can Elevate Your Success'
+  'Discover Our Services And Reach Out Today To Explore How We Can Elevate Your Success'
 
 const backgrounds = [
   'https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
