@@ -9,7 +9,7 @@ const VideoPlayer = () => {
         style={{ width: '100%', height: 'auto', maxWidth: '500px' }}
       >
         <source
-          src='https://firebasestorage.googleapis.com/v0/b/lms-926e5.appspot.com/o/division%2Fquince-promo.mp4?alt=media&token=b3afef54-1d48-461a-8c7c-43792066be6b'
+          src='https://firebasestorage.googleapis.com/v0/b/lms-926e5.appspot.com/o/quince%2025fps%20480p.mp4?alt=media&token=b2a74abb-1edd-4f06-8b85-d41c98379898'
           type='video/mp4'
         />
       </video>

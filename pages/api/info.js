@@ -1,10 +1,10 @@
-import nc from 'next-coonect'
+import nc from 'next-connect'
 import Info from '../../models/Info'
 import db from '../../utils/db'
 
 const handler = nc()
 
-handler.get(async () => {
+handler.get(async (req, res) => {
   try {
     await db.connect()
     const info = await Info.find({})
@@ -12,11 +12,11 @@ handler.get(async () => {
     await db.disconnect()
   } catch (error) {
     console.log(error)
-    res.staus(400).send(error)
+    res.status(400).send(error)
   }
 })
 
-handler.post(async () => {
+handler.post(async (req, res) => {
   try {
     await db.connect()
     const info = await new Info(req.body)
