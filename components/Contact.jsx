@@ -1,9 +1,62 @@
 import React, { useState } from 'react'
 import styles from '../styles/Contact.module.css'
 import { useRouter } from 'next/router'
+import axios from 'axios'
+import { useDispatch } from 'react-redux'
+import { showSnackBar } from '../redux/notistackSlice'
+import { finishLoading, startLoading } from '../redux/stateSlice'
+
 const Contact = () => {
   const router = useRouter()
-  const [details, setDetails] = useState({})
+  const dispatch = useDispatch()
+
+  const [details, setDetails] = useState({
+    need: 'I Need Website'
+  })
+
+  const submit = async () => {
+    if (
+      !details.need ||
+      !details.budget ||
+      !details.firstName ||
+      !details.lastName ||
+      !details.phone ||
+      !details.email
+    ) {
+      dispatch(
+        showSnackBar({
+          message: 'Fill All The Required Field',
+          option: {
+            variant: 'error'
+          }
+        })
+      )
+      return
+    }
+
+    try {
+      dispatch(startLoading())
+      const { data } = await axios.post('/api/info', {
+        ...details
+      })
+      dispatch(finishLoading())
+
+      if (data) {
+        dispatch(
+          showSnackBar({
+            message: 'We have recieved you response to talk',
+            option: {
+              variant: 'success'
+            }
+          })
+        )
+        // router.push('/')
+      }
+    } catch (error) {
+      dispatch(finishLoading())
+      console.log(error)
+    }
+  }
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
@@ -60,9 +113,7 @@ const Contact = () => {
               type='text'
               placeholder='Example: https://www.facebook.com/profile.php?id=61563280450815'
               value={details.page}
-              onChange={e =>
-                setDetails({ ...details, firstName: e.target.value })
-              }
+              onChange={e => setDetails({ ...details, page: e.target.value })}
             />
           </div>
           <div className={styles.field}>
@@ -75,7 +126,7 @@ const Contact = () => {
                 'I Need Ecomerce Website',
                 'I Need News Portal Website'
               ].map((i, index) => (
-                <option>{i}</option>
+                <option value={i}>{i}</option>
               ))}
             </select>
           </div>
@@ -99,7 +150,9 @@ const Contact = () => {
               }
             ></textarea>
           </div>
-          <div className={styles.button}>Here We Go </div>
+          <div className={styles.button} onClick={() => submit()}>
+            Here We Go{' '}
+          </div>
         </div>
       </div>
     </div>

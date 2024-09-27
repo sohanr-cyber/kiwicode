@@ -56,7 +56,7 @@
 .header .content p,
 .header video {
   position: relative;
-  z-index: 12353250;
+  z-index: 1;
 
 }
 
@@ -70,7 +70,7 @@
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  z-index: 3;
+  z-index: 1;
 }
 
 

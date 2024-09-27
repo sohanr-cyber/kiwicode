@@ -26,7 +26,6 @@ const infoSchema = new mongoose.Schema(
 
     page: {
       type: String,
-      required: true,
       trim: true
     },
     need: {
