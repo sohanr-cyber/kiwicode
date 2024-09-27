@@ -1,91 +1,91 @@
-import React, { useEffect, useState } from "react";
-import styles from "../styles/Navbar.module.css";
-import { useRouter } from "next/router";
-import MenuIcon from "@mui/icons-material/Menu";
-import ClearIcon from "@mui/icons-material/Clear";
-import Logo from "./utils/Logo";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from 'react'
+import styles from '../styles/Navbar.module.css'
+import { useRouter } from 'next/router'
+import MenuIcon from '@mui/icons-material/Menu'
+import ClearIcon from '@mui/icons-material/Clear'
+import Logo from './utils/Logo'
+import { motion } from 'framer-motion'
 const Navbar = () => {
-  const router = useRouter();
-  const [open, setOpen] = useState(false);
-  const [visible, setVisible] = useState(true);
+  const router = useRouter()
+  const [open, setOpen] = useState(false)
+  const [visible, setVisible] = useState(true)
 
   useEffect(() => {
     setInterval(() => {
-      setVisible((prev) => !prev);
-    }, 20000);
-  }, []);
+      setVisible(prev => !prev)
+    }, 20000)
+  }, [])
 
   useEffect(() => {
     if (!visible) {
-      setVisible(true);
+      setVisible(true)
     }
-  }, [visible]);
+  }, [visible])
 
-  const user = false;
+  const user = false
   return (
-    <motion.div
+    <div
       initial={{ opacity: 0, y: -600 }}
       animate={{
         opacity: 1,
         y: 0,
-        transition: { duration: 1.6 },
+        transition: { duration: 1.3 }
       }}
       className={styles.navbar}
     >
-      <div className={styles.nav__logo} onClick={() => router.push("/")}>
+      <div className={styles.nav__logo} onClick={() => router.push('/')}>
         {visible ? <Logo dyanamic={true} /> : <></>}
       </div>
 
-      <motion.div
+      <div
         initial={{ opacity: 0, y: -2000 }}
         animate={{
           opacity: 1,
           y: 0,
-          transition: { duration: 3.5 },
+          transition: { duration: 2 }
         }}
         className={styles.nav__items}
       >
-        <div className={styles.item} onClick={() => router.push("/")}>
+        <div className={styles.item} onClick={() => router.push('/')}>
           Home
         </div>
-        <div className={styles.item} onClick={() => router.push("/#header")}>
+        <div className={styles.item} onClick={() => router.push('/#header')}>
           About
         </div>
-        <div className={styles.item} onClick={() => router.push("/#projects")}>
+        <div className={styles.item} onClick={() => router.push('/#projects')}>
           Projects
         </div>
         <div
           className={styles.item}
-          onClick={() => router.push("/#architecture")}
+          onClick={() => router.push('/#architecture')}
         >
           Services
         </div>
-        <div className={styles.item} onClick={() => router.push("/#reviews")}>
+        <div className={styles.item} onClick={() => router.push('/#reviews')}>
           Reviews
         </div>
-        <div className={styles.item} onClick={() => router.push("/#news")}>
+        <div className={styles.item} onClick={() => router.push('/#news')}>
           News
         </div>
-      </motion.div>
-      <motion.div
+      </div>
+      <div
         className={styles.nav__right}
         initial={{ opacity: 0, y: -20000 }}
         animate={{
           opacity: 1,
           y: 0,
-          transition: { duration: 3.8 },
+          transition: { duration: 2.5 }
         }}
       >
         <div className={styles.profile}>
           <div
             className={styles.item}
-            onClick={() => router.push("mailto:sohanur25800@gmail.com")}
+            onClick={() => router.push('?contactNow=true')}
           >
-            Contact
+            Let's Talk
           </div>
         </div>
-      </motion.div>
+      </div>
       {!open && (
         <div className={styles.icon} onClick={() => setOpen(true)}>
           <MenuIcon />
@@ -97,34 +97,34 @@ const Navbar = () => {
             <div className={styles.icon} onClick={() => setOpen(false)}>
               <ClearIcon />
             </div>
-            <div className={styles.item} onClick={() => router.push("/")}>
+            <div className={styles.item} onClick={() => router.push('/')}>
               Home
             </div>
             <div
               className={styles.item}
-              onClick={() => router.push("/#header")}
+              onClick={() => router.push('/#header')}
             >
               About
             </div>
             <div
               className={styles.item}
-              onClick={() => router.push("/#project")}
+              onClick={() => router.push('/#project')}
             >
               Projects
             </div>
             <div
               className={styles.item}
-              onClick={() => router.push("/#architecture")}
+              onClick={() => router.push('/#architecture')}
             >
               Services
             </div>
             <div
               className={styles.item}
-              onClick={() => router.push("/#reviews")}
+              onClick={() => router.push('/#reviews')}
             >
               Reviews
             </div>
-            <div className={styles.item} onClick={() => router.push("/#news")}>
+            <div className={styles.item} onClick={() => router.push('/#news')}>
               News
             </div>
           </div>
@@ -133,7 +133,7 @@ const Navbar = () => {
             <div className={styles.profile}>
               <div
                 className={styles.item}
-                onClick={() => router.push("mailto:sohanur25800@gmail.com")}
+                onClick={() => router.push('mailto:sohanur25800@gmail.com')}
               >
                 Contact
               </div>
@@ -141,8 +141,8 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </motion.div>
-  );
-};
+    </div>
+  )
+}
 
-export default Navbar;
+export default Navbar

@@ -21,6 +21,12 @@
 
 
 
+@media (min-width:1024px) {
+    .wrapper {
+        padding: 10px var(--percent);
+    }
+}
+
 @media (max-width:720px) {
     .projects {
         display: flex;

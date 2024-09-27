@@ -1,42 +1,42 @@
-import React from "react";
-import styles from "../styles/Footer.module.css";
-import Image from "next/image";
-import CopyrightIcon from "@mui/icons-material/Copyright";
-import Logo from "./utils/Logo";
-import { useRouter } from "next/router";
+import React from 'react'
+import styles from '../styles/Footer.module.css'
+import Image from 'next/image'
+import CopyrightIcon from '@mui/icons-material/Copyright'
+import Logo from './utils/Logo'
+import { useRouter } from 'next/router'
 
 const routes = [
   [
-    { title: "Home", route: "/" },
-    { title: "About", route: "/about" },
+    { title: 'Home', route: '/' },
+    { title: 'About', route: '/about' }
   ],
   [
-    { title: "Contact", route: "/" },
-    { title: "Projects", route: "#projects" },
+    { title: 'Contact', route: '/' },
+    { title: 'Projects', route: '#projects' }
   ],
 
   [
-    { title: "service", route: "#service" },
-    { title: "websites", route: "#website" },
+    { title: 'service', route: '#service' },
+    { title: 'websites', route: '#website' }
   ],
   [
-    { title: "Technologies", route: "/#technologies" },
-    { title: "Privacy Policy ", route: "/privacy-policy" },
+    { title: 'Technologies', route: '/#technologies' },
+    { title: 'Privacy Policy ', route: '/privacy-policy' }
   ],
   [
-    { title: "Terms and Condition", route: "/terms-and-conditions" },
-    { title: "Career", route: "/" },
-  ],
-];
+    { title: 'Terms and Condition', route: '/terms-and-conditions' },
+    { title: 'Career', route: '/' }
+  ]
+]
 
 const Footer = () => {
-  const router = useRouter();
+  const router = useRouter()
   return (
-    <div className={styles.wrapper} id="footer">
+    <div className={styles.wrapper} id='footer'>
       <div className={styles.grid}>
         <div className={styles.left}>
           <logo></logo>
-          <div className={styles.name} style={{ textAlign: "left" }}>
+          <div className={styles.name} style={{ textAlign: 'left' }}>
             <Logo />
           </div>
 
@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
         <div className={styles.mid}>
           <h2>Our Company</h2>
-          {routes.map((item) => (
+          {routes.map(item => (
             <div className={styles.flex}>
               <div
                 className={styles.link}
@@ -70,7 +70,7 @@ const Footer = () => {
         <div className={styles.right}>
           <h2 className={styles.contact}>Contact Us</h2>
           <div className={styles.email}>
-            Eamil us : <span> testEmail@gmail.com</span>
+            Eamil us : <span> quincesoftwaredev@gmail.com</span>
           </div>
           <div className={styles.phone}>
             Call us : <span> 01744329811</span>
@@ -81,39 +81,44 @@ const Footer = () => {
           <div className={styles.flex}>
             <div className={styles.icon}>
               <Image
-                src="/images/instagram.png"
-                width="30px"
-                height="30px"
-                alt="inst"
+                src='/images/instagram.png'
+                width='30px'
+                height='30px'
+                alt='inst'
               />
             </div>
             <div className={styles.icon}>
-              {" "}
+              {' '}
               <Image
-                src="/images/facebook.png"
-                width="30px"
-                height="30px"
-                alt="inst"
+                src='/images/facebook.png'
+                width='30px'
+                height='30px'
+                alt='inst'
+                onClick={() =>
+                  router.push(
+                    'https://www.facebook.com/profile.php?id=61563280450815'
+                  )
+                }
               />
             </div>
             <div className={styles.icon}>
-              {" "}
+              {' '}
               <Image
-                src="/images/telegram.png"
-                width="30px"
-                height="30px"
-                alt="inst"
+                src='/images/telegram.png'
+                width='30px'
+                height='30px'
+                alt='inst'
               />
             </div>
           </div>
         </div>
       </div>
       <div className={styles.bottom}>
-        <CopyrightIcon style={{ fontSize: "130%" }} />
+        <CopyrightIcon style={{ fontSize: '130%' }} />
         2022 All Rights Reserved
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

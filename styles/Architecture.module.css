@@ -38,6 +38,14 @@
   margin-bottom: 10px;
 }
 
+
+@media (min-width:1024px) {
+  .work__wrapper {
+    padding: 10px var(--percent);
+  }
+}
+
+
 @media (max-width: 768px) {
   .grid {
     display: grid;

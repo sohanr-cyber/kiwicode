@@ -4,6 +4,7 @@ import { useState } from 'react'
 import styles from '../styles/Header.module.css'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
+import VideoPlayer from './utils/VideoPlayer'
 const welcomeData =
   'Code Your Way to Success Where Attractiveness Meets Effectiveness'
 const welcomePData =
@@ -36,7 +37,7 @@ const Header = () => {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.3
+        staggerChildren: 0.2
       }
     }
   }
@@ -54,42 +55,68 @@ const Header = () => {
         backgroundPosition: 'center'
       }}
     >
-      <div className={styles.surface}></div>
-      {/* <video autoPlay={true} muted loop id="myVideo">
-        <source src="assets/bg3.mp4" type="video/mp4" />
-      </video> */}
-      <motion.div
-        className={styles.content}
-        initial='hidden'
-        animate='visible'
-        variants={parentVariants}
-      >
-        <motion.h1
-          // initial={{ opacity: 0 }}
-          // animate={{
-          //   opacity: 1,
-          // }}
-          // transition={{ duration: 0.5 }}
-          variants={childVariants}
-        >
-          {welcomeData}
-        </motion.h1>
-        <motion.p variants={childVariants}>{welcomePData}</motion.p>
-        <motion.p variants={childVariants}>{welcomeP2Data}</motion.p>
-        <motion.div
-          initial={{ opacity: 0, y: 20000 }}
-          animate={{
-            opacity: 1,
-            y: 0
-          }}
-          transition={{ duration: 5 }}
-          className={styles.btn}
-          onClick={() => router.push('http://m.me/61563280450815')}
-        >
-          Contact Us
-        </motion.div>
-      </motion.div>{' '}
-      <motion.div
+      <div className={styles.surface}>
+        <div className={styles.left}>
+          <div
+            className={styles.content}
+            initial='hidden'
+            animate='visible'
+            variants={parentVariants}
+          >
+            <h2
+              // initial={{ opacity: 0 }}
+              // animate={{
+              //   opacity: 1,
+              // }}
+              // transition={{ duration: 0.5 }}
+              variants={childVariants}
+            >
+              {welcomeData}
+            </h2>
+            <p variants={childVariants}>{welcomePData}</p>
+            {/* <p variants={childVariants}>{welcomeP2Data}</p> */}
+            <div
+              initial={{ opacity: 0, y: 20000 }}
+              animate={{
+                opacity: 1,
+                y: 0
+              }}
+              transition={{ duration: 5 }}
+              className={styles.btn}
+              onClick={() => router.push('?contactNow=true')}
+            >
+              Contact Us
+            </div>
+          </div>{' '}
+        </div>
+        <div className={styles.right}>
+          <h2
+            initial={{ opacity: 0, y: 20000 }}
+            animate={{
+              opacity: 1,
+              y: 0
+            }}
+            transition={{ duration: 5.5 }}
+          >
+            {' '}
+            {welcomeData}
+          </h2>
+          <div
+            initial={{ opacity: 0, y: 20000 }}
+            animate={{
+              opacity: 1,
+              y: 0
+            }}
+            transition={{ duration: 6 }}
+            className={styles.video__container}
+          >
+            <VideoPlayer />
+          </div>
+        </div>
+      </div>
+
+      {/*  drawing */}
+      <div
         initial={{ opacity: 0, y: -20000 }}
         animate={{
           opacity: 1,
@@ -97,8 +124,8 @@ const Header = () => {
         }}
         transition={{ duration: 4 }}
         className={styles.star}
-      ></motion.div>
-      <motion.div
+      ></div>
+      <div
         initial={{ opacity: 0, y: -20000 }}
         animate={{
           opacity: 1,
@@ -106,8 +133,8 @@ const Header = () => {
         }}
         transition={{ duration: 4.3 }}
         className={styles.triangle}
-      ></motion.div>
-      <motion.div
+      ></div>
+      <div
         initial={{ opacity: 0, x: -20000 }}
         animate={{
           opacity: 1,
@@ -117,8 +144,8 @@ const Header = () => {
         className={styles.circle_1}
       >
         <div className={styles.inner_cirlce_1}></div>
-      </motion.div>
-      <motion.div
+      </div>
+      <div
         initial={{ opacity: 0, x: 20000 }}
         animate={{
           opacity: 1,
@@ -128,7 +155,7 @@ const Header = () => {
         className={styles.circle_2}
       >
         <div className={styles.inner_cirlce_1}></div>
-      </motion.div>
+      </div>
     </div>
   )
 }
