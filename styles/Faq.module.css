@@ -75,3 +75,9 @@
     max-width: calc(100% - 15px);
   }
 }
+
+@media (max-width:480px) {
+  .wrapper {
+    padding: 40px 10px
+  }
+}

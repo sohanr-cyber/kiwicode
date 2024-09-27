@@ -257,3 +257,15 @@
   }
 
 }
+
+
+@media (max-width:480px) {
+  .header .surface .right {
+    padding: 0 10px;
+  }
+
+  .header .content {
+    justify-content: flex-start;
+    padding: 0 10px;
+  }
+}

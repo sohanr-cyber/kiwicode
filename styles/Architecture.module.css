@@ -103,3 +103,9 @@
     text-align: left;
   }
 }
+
+@media (max-width:480px) {
+  .work__wrapper {
+    padding: 30px 10px
+  }
+}

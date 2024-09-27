@@ -117,3 +117,15 @@
     padding: 10px;
   }
 }
+
+@media (max-width:570px) {
+  .navbar {
+    padding: 15px;
+  }
+}
+
+@media (max-width:480px) {
+  .navbar {
+    padding: 10px;
+  }
+}

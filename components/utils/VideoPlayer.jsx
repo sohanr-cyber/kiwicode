@@ -6,6 +6,7 @@ const VideoPlayer = () => {
       <video
         controls
         playsInline
+        poster='./images/quince.png'
         width={480}
         style={{ width: '100%', height: 'auto', maxWidth: '500px' }}
       >
