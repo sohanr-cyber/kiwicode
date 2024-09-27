@@ -232,7 +232,7 @@
   }
 
   .header .surface .right {
-    padding: 15px;
+    padding: 0 15px;
   }
 
   .header .content {
@@ -250,6 +250,10 @@
 
   .header .content {
     align-items: flex-start;
+  }
+
+  .surface {
+    padding-top: 60px;
   }
 
 }
