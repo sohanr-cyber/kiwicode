@@ -5,6 +5,7 @@ const VideoPlayer = () => {
     <div>
       <video
         controls
+        playsInline
         width={480}
         style={{ width: '100%', height: 'auto', maxWidth: '500px' }}
       >
