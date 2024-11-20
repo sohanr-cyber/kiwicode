@@ -88,7 +88,7 @@ export default function Home () {
         <Header />
         <Architecture />
         <WebsiteTypes />
-        <Projects />
+      
         <Benifit /> <Technologies />
         {/* <Reviews />
 
