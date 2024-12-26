@@ -11,18 +11,6 @@ export const architecture = [
     details:
       "Our web development services encompass front-end and back-end development, creating responsive and user-friendly websites that engage your audience and deliver exceptional user experiences.",
   },
-  // {
-  //   icon: "/images/telegram (1).png",
-  //   title: "Backend Development",
-  //   details:
-  //     "We specialize in the development of robust and scalable backend systems that power your applications",
-  // },
-  // {
-  //   icon: "/images/guarantee-certificate.png",
-  //   title: "Frontend Development",
-  //   details:
-  //     "Our frontend development services focus on creating engaging and user-friendly interfaces that make a lasting impression",
-  // },
   {
     icon: "https://cdn-icons-png.flaticon.com/128/10087/10087438.png",
     title: "Consultation",

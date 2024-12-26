@@ -6,21 +6,21 @@ import vibrant from "node-vibrant";
 const Project = ({ p, index }) => {
   const [imageDominantColor, setImageDominantColor] = useState(null);
   const router = useRouter();
-  const [surfaceColor, setSurfaceColor] = useState();
-  useEffect(() => {
-    vibrant.from(p.image).getPalette((err, palette) => {
-      const colors = palette.Vibrant._rgb;
-      // const colors = palette.DarkMuted._rgb;
-      // const colors = palette.LightMuted._rgb;
-      // const colors = palette.LightVibrant._rgb;
-      // const colors = palette.Muted._rgb;
+  const [surfaceColor, setSurfaceColor] = useState("rgb(0, 200, 255)");
+  // useEffect(() => {
+  //   vibrant.from(p.image).getPalette((err, palette) => {
+  //     const colors = palette.Vibrant._rgb;
+  //     // const colors = palette.DarkMuted._rgb;
+  //     // const colors = palette.LightMuted._rgb;
+  //     // const colors = palette.LightVibrant._rgb;
+  //     // const colors = palette.Muted._rgb;
 
-      console.log(palette);
-      console.log(colors);
-      setSurfaceColor(`rgb(${colors[0]},${colors[1]}, ${colors[2]},0.5)`);
-      setImageDominantColor(`rgb(${colors[0]},${colors[1]}, ${colors[2]},0.2)`);
-    });
-  }, [p]);
+  //     console.log(palette);
+  //     console.log(colors);
+  //     setSurfaceColor(`rgb(${colors[0]},${colors[1]}, ${colors[2]},0.5)`);
+  //     setImageDominantColor(`rgb(${colors[0]},${colors[1]}, ${colors[2]},0.2)`);
+  //   });
+  // }, [p]);
 
   return (
     <div

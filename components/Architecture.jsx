@@ -4,6 +4,8 @@ import Image from "next/image";
 import { architecture } from "../data";
 import Logo from "./utils/Logo";
 import { useRouter } from "next/router";
+import { offer } from "../utils/data";
+import t from "../utils/dict";
 const colors = [
   "rgb(255, 0, 0, 0.1)",
   "rgb(0, 129, 0, 0.1)",
@@ -12,15 +14,17 @@ const colors = [
 ];
 const Work = () => {
   const router = useRouter();
+  const { locale } = router
   return (
     <div className={styles.work__wrapper} id="service">
-      <Logo /> <h1>What do we do?</h1>
+      <Logo /> <h1>
+        {offer[locale].h1}
+      </h1>
       <p>
-        Quince offers a comprehensive suite of services tailored to elevate your
-        digital presence and ensure sustained success
+        {offer[locale].p}
       </p>
       <div className={styles.grid}>
-        {architecture.map((item, index) => (
+        {offer[locale].offers.map((item, index) => (
           <div
             className={styles.item}
             style={{
@@ -42,7 +46,7 @@ const Work = () => {
         className={styles.btn}
         onClick={() => router.push("mailto:sohanur25800@gmail.com")}
       >
-        Contact Us
+        {t("contactUs", locale)}
       </div>
     </div>
   );

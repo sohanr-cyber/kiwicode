@@ -5,6 +5,8 @@ import styles from '../styles/Header.module.css'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import VideoPlayer from './utils/VideoPlayer'
+import { header } from '../utils/data'
+import t from '../utils/dict'
 const welcomeData =
   'Code Your Way to Success Where Attractiveness Meets Effectiveness'
 const welcomePData =
@@ -24,7 +26,7 @@ const backgrounds = [
 const Header = () => {
   const router = useRouter()
   const [backgroundIndex, setBackgroundIndex] = useState(0)
-
+  const { locale } = router
   useEffect(() => {
     const interval = setInterval(() => {
       // Increment the background index to change the picture
@@ -56,66 +58,18 @@ const Header = () => {
       }}
     >
       <div className={styles.surface}>
-        <div className={styles.left}>
-          <div
-            className={styles.content}
-            initial='hidden'
-            animate='visible'
-            variants={parentVariants}
-          >
-            <h2
-              // initial={{ opacity: 0 }}
-              // animate={{
-              //   opacity: 1,
-              // }}
-              // transition={{ duration: 0.5 }}
-              variants={childVariants}
-            >
-              {welcomeData}
-            </h2>
-            <p variants={childVariants}>{welcomePData}</p>
-            {/* <p variants={childVariants}>{welcomeP2Data}</p> */}
-            <div
-              initial={{ opacity: 0, y: 20000 }}
-              animate={{
-                opacity: 1,
-                y: 0
-              }}
-              transition={{ duration: 5 }}
-              className={styles.btn}
-              onClick={() => router.push('?contactNow=true')}
-            >
-              Contact Us
-            </div>
-          </div>{' '}
-        </div>
-        <div className={styles.right}>
-          <h2
-            initial={{ opacity: 0, y: 20000 }}
-            animate={{
-              opacity: 1,
-              y: 0
-            }}
-            transition={{ duration: 5.5 }}
-          >
-            {' '}
-            {welcomeData}
-          </h2>
-          <div
-            initial={{ opacity: 0, y: 20000 }}
-            animate={{
-              opacity: 1,
-              y: 0
-            }}
-            transition={{ duration: 6 }}
-            className={styles.video__container}
-          >
-            <VideoPlayer />
-          </div>
+        <h1>
+          {header[locale].h1}
+        </h1>
+        <h3>{header[locale].p
+        }
+        </h3>
+        <div className={styles.btn}>
+          {t("Contact", locale)}
         </div>
       </div>
 
-      {/*  drawing */}
+
       <div
         initial={{ opacity: 0, y: -20000 }}
         animate={{

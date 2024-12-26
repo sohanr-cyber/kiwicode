@@ -5,10 +5,12 @@ import MenuIcon from '@mui/icons-material/Menu'
 import ClearIcon from '@mui/icons-material/Clear'
 import Logo from './utils/Logo'
 import { motion } from 'framer-motion'
+import t from '../utils/dict'
 const Navbar = () => {
   const router = useRouter()
   const [open, setOpen] = useState(false)
   const [visible, setVisible] = useState(true)
+  const { locale } = useRouter()
 
   useEffect(() => {
     setInterval(() => {
@@ -47,25 +49,30 @@ const Navbar = () => {
         className={styles.nav__items}
       >
         <div className={styles.item} onClick={() => router.push('/')}>
-          Home
+          {t("Home", locale)}
         </div>
         <div className={styles.item} onClick={() => router.push('/#header')}>
-          About
+          {t("About", locale)}
+
         </div>
         <div className={styles.item} onClick={() => router.push('/#projects')}>
-          Projects
+          {t("Projects", locale)}
+
         </div>
         <div
           className={styles.item}
           onClick={() => router.push('/#architecture')}
         >
-          Services
+          {t("Service", locale)}
+
         </div>
         <div className={styles.item} onClick={() => router.push('/#reviews')}>
-          Reviews
+          {t("Reviews", locale)}
+
         </div>
         <div className={styles.item} onClick={() => router.push('/#news')}>
-          News
+          {t("News", locale)}
+
         </div>
       </div>
       <div
@@ -98,34 +105,35 @@ const Navbar = () => {
               <ClearIcon />
             </div>
             <div className={styles.item} onClick={() => router.push('/')}>
-              Home
+              {t("Home", locale)}
+
             </div>
             <div
               className={styles.item}
               onClick={() => router.push('/#header')}
             >
-              About
+              {t("About", locale)}
             </div>
             <div
               className={styles.item}
               onClick={() => router.push('/#project')}
             >
-              Projects
+              {t("Projects", locale)}
             </div>
             <div
               className={styles.item}
               onClick={() => router.push('/#architecture')}
             >
-              Services
+              {t("Service", locale)}
             </div>
             <div
               className={styles.item}
               onClick={() => router.push('/#reviews')}
             >
-              Reviews
+              {t("Reviews", locale)}
             </div>
             <div className={styles.item} onClick={() => router.push('/#news')}>
-              News
+              {t("News", locale)}
             </div>
           </div>
 
@@ -135,7 +143,7 @@ const Navbar = () => {
                 className={styles.item}
                 onClick={() => router.push('mailto:sohanur25800@gmail.com')}
               >
-                Contact
+                    {t("Contact", locale)}
               </div>
             </div>
           </div>

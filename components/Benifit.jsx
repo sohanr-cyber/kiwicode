@@ -2,16 +2,21 @@ import React from "react";
 import styles from "../styles/Benifits.module.css";
 import Image from "next/image";
 import { hireUsBenefits } from "../data";
+import { hireUsBenefit } from "../utils/data";
+import { useRouter } from "next/router";
 
 const Benifit = () => {
+  const { locale } = useRouter()
   return (
     <div className={styles.wrapper} id="benifit">
-      <h1>Benefits of Hiring Us</h1>
-   
+      <h1>
+        {hireUsBenefit[locale].h1}
+      </h1>
+
       <p></p>
 
       <div className={styles.benifits}>
-        {hireUsBenefits.map((benifit, index) => (
+        {hireUsBenefit[locale].hireUsBenefits.map((benifit, index) => (
           <div className={styles.benifit}>
             <div className={styles.title}>
               <span>
