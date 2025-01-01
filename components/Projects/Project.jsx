@@ -6,7 +6,7 @@ import vibrant from "node-vibrant";
 const Project = ({ p, index }) => {
   const [imageDominantColor, setImageDominantColor] = useState(null);
   const router = useRouter();
-  const [surfaceColor, setSurfaceColor] = useState("rgb(0, 200, 255)");
+  const [surfaceColor, setSurfaceColor] = useState("rgb(0, 200, 255,0.2)");
   // useEffect(() => {
   //   vibrant.from(p.image).getPalette((err, palette) => {
   //     const colors = palette.Vibrant._rgb;
@@ -33,8 +33,8 @@ const Project = ({ p, index }) => {
           style={
             surfaceColor
               ? {
-                  background: `linear-gradient(360deg , ${surfaceColor}, rgb(0 , 0 , 0 , 0))`,
-                }
+                background: `linear-gradient(360deg , ${surfaceColor}, rgb(0 , 0 , 0 , 0))`,
+              }
               : {}
           }
         ></div>

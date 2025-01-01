@@ -46,6 +46,10 @@ const dict = {
         en: "Contact Us",
         bn: "আমাদের সাথে যোগাযোগ করুন"
     },
+    learnMore: {
+        en: "Learn More",
+        bn: "আরও জানুন"
+    },
     callUs: {
         en: "Call Us",
         bn: "আমাদের কল করুন"

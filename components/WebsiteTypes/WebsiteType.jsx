@@ -4,9 +4,11 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Vibrant from "node-vibrant";
 import slugify from "slugify";
+import t from "../../utils/dict";
 const WebsiteType = ({ item, index }) => {
   const [imageDominantColor, setImageDominantColor] = useState(null);
   const router = useRouter();
+  const { locale } = router
   const [surfaceColor, setSurfaceColor] = useState();
   return (
     <div
@@ -21,8 +23,8 @@ const WebsiteType = ({ item, index }) => {
           style={
             surfaceColor
               ? {
-                  background: `linear-gradient(360deg , ${surfaceColor}, rgb(0 , 0 , 0 , 0))`,
-                }
+                background: `linear-gradient(360deg , ${surfaceColor}, rgb(0 , 0 , 0 , 0))`,
+              }
               : {}
           }
         ></div>
@@ -48,7 +50,7 @@ const WebsiteType = ({ item, index }) => {
           className={styles.btn}
           onClick={() => router.push(`/websiteType/${slugify(item.type)}`)}
         >
-          Learn More
+          {t("learnMore", locale)}
         </div>
       </div>
     </div>
