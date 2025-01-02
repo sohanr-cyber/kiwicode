@@ -66,14 +66,7 @@ const Navbar = () => {
           {t("Service", locale)}
 
         </div>
-        <div className={styles.item} onClick={() => router.push('/#reviews')}>
-          {t("Reviews", locale)}
-
-        </div>
-        <div className={styles.item} onClick={() => router.push('/#news')}>
-          {t("News", locale)}
-
-        </div>
+      
       </div>
       <div
         className={styles.nav__right}
@@ -126,15 +119,7 @@ const Navbar = () => {
             >
               {t("Service", locale)}
             </div>
-            <div
-              className={styles.item}
-              onClick={() => router.push('/#reviews')}
-            >
-              {t("Reviews", locale)}
-            </div>
-            <div className={styles.item} onClick={() => router.push('/#news')}>
-              {t("News", locale)}
-            </div>
+
           </div>
 
           <div className={styles.nav__right}>
@@ -143,7 +128,7 @@ const Navbar = () => {
                 className={styles.item}
                 onClick={() => router.push('mailto:sohanur25800@gmail.com')}
               >
-                    {t("Contact", locale)}
+                {t("Contact", locale)}
               </div>
             </div>
           </div>
