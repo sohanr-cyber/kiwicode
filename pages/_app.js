@@ -10,13 +10,14 @@ import { SnackbarProvider } from 'notistack'
 
 ReactGA.initialize('347755089')
 
-function MyApp ({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search)
   }, [])
 
   return (
     <>
+    <meta name="apple-mobile-web-app-title" content="Quince Software" />
       <NextNProgress height={2} />
       <Provider store={store}>
         <SnackbarProvider>

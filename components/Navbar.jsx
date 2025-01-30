@@ -61,7 +61,7 @@ const Navbar = () => {
         </div>
         <div
           className={styles.item}
-          onClick={() => router.push('/#architecture')}
+          onClick={() => router.push('/#service')}
         >
           {t("Service", locale)}
 
@@ -115,7 +115,7 @@ const Navbar = () => {
             </div>
             <div
               className={styles.item}
-              onClick={() => router.push('/#architecture')}
+              onClick={() => router.push('/#service')}
             >
               {t("Service", locale)}
             </div>

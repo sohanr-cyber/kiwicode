@@ -145,7 +145,7 @@ const websiteType = {
     bn: {
 
         h1: "কী ধরনের ওয়েবসাইট আমরা আপনার জন্য তৈরি করব",
-        p: "কুইন্সে, আপনার বিশেষ চাহিদা অনুযায়ী কার্যকরী এবং আকর্ষণীয় অনলাইন প্ল্যাটফর্ম তৈরি করা হয়। আপনি চাইলে একটি ব্যবসায়িক ওয়েবসাইট বা একটি দৃষ্টিনন্দন পোর্টফোলিও তৈরি করতে পারেন, যা আপনার ডিজিটাল উপস্থিতিকে নতুনভাবে উপস্থাপন করবে। এখানে আপনার জন্য বিভিন্ন ধরনের ওয়েবসাইট তৈরি করা হয় যা আপনার ডিজিটাল পরিচয়কে আরও শক্তিশালী করবে ",
+        p: "Quince, আপনার বিশেষ চাহিদা অনুযায়ী কার্যকরী এবং আকর্ষণীয় অনলাইন প্ল্যাটফর্ম তৈরি করা হয়। আপনি চাইলে একটি ব্যবসায়িক ওয়েবসাইট বা একটি দৃষ্টিনন্দন পোর্টফোলিও তৈরি করতে পারেন, যা আপনার ডিজিটাল উপস্থিতিকে নতুনভাবে উপস্থাপন করবে। এখানে আপনার জন্য বিভিন্ন ধরনের ওয়েবসাইট তৈরি করা হয় যা আপনার ডিজিটাল পরিচয়কে আরও শক্তিশালী করবে ",
         websiteTypes: [
             {
                 type: "ব্যবসায়িক ওয়েবসাইট",
@@ -295,7 +295,7 @@ const project = {
                 technologiesUsed: [
                     "Next.js for frontend and backend",
                     "MongoDB for product data management",
-                    "Stripe for secure payments",
+                    "sslcommerz for secure payments",
                 ],
                 keyFeatures: [
                     "Comprehensive product details and specifications",
@@ -343,23 +343,24 @@ const project = {
                 image: "/projects/agrofresh.png",
             },
             {
-                title: "BookHive - Online Bookstore",
-                overview:
-                    "BookHive is a comprehensive online bookstore catering to avid readers and casual book buyers. It offers curated collections, user reviews, and personalized recommendations to enhance the reading experience.",
-                technologiesUsed: [
+                "title": "StyleHive - Trendy Clothing Store",
+                "overview": "StyleHive is a modern online clothing store offering the latest fashion trends for men and women. It provides a seamless shopping experience with curated collections, customer reviews, and personalized recommendations.",
+                "technologiesUsed": [
                     "Next.js for frontend and backend",
-                    "MongoDB for book data and reviews",
-                    "Stripe for payment integration",
+                    "MongoDB for product data and customer reviews",
+                    "sslcommerz for secure payment integration"
                 ],
-                keyFeatures: [
-                    "Advanced search and genre filters",
-                    "User reviews and ratings for books",
-                    "Order tracking with personalized notifications",
+                "keyFeatures": [
+                    "Advanced search with category and price filters",
+                    "Customer reviews and ratings for products",
+                    "Order tracking with real-time updates",
+                    "Personalized outfit recommendations"
                 ],
-                git: "https://github.com/your-repo/bookhive",
-                live: "https://bookhive.example.com",
-                image: "/projects/bookhive.png",
-            },
+                "git": "https://github.com/your-repo/stylehive",
+                "live": "https://stylehive.example.com",
+                "image": "/projects/stylehive.png"
+            }
+            ,
             {
                 title: "DhakaPulse24 - Breaking News Hub",
                 overview:
@@ -401,7 +402,7 @@ const project = {
     },
     bn: {
         h1: "এখানে যা আমরা তৈরি করেছি",
-        p: "কুইন্সে আমাদের যাত্রা অন্বেষণ করুন, যেখানে উদ্ভাবন আমাদের সাফল্যের মূলমন্ত্র। আমাদের পোর্টফোলিও আমাদের নিবেদনের প্রমাণ, যা শিল্পের মানদণ্ডকে নতুনভাবে সংজ্ঞায়িত করে এমন সর্বাধুনিক সফটওয়্যার সমাধান প্রদর্শন করে। প্রতিটি সৃষ্টি, যত্ন সহকারে ডিজাইন করা এবং নিখুঁতভাবে কার্যকর করা, উৎকৃষ্টতার প্রতি আমাদের প্রতিশ্রুতি সম্পর্কে অনেক কিছু বলে",
+        p: "Quince আমাদের যাত্রা অন্বেষণ করুন, যেখানে উদ্ভাবন আমাদের সাফল্যের মূলমন্ত্র। আমাদের পোর্টফোলিও আমাদের নিবেদনের প্রমাণ, যা শিল্পের মানদণ্ডকে নতুনভাবে সংজ্ঞায়িত করে এমন সর্বাধুনিক সফটওয়্যার সমাধান প্রদর্শন করে। প্রতিটি সৃষ্টি, যত্ন সহকারে ডিজাইন করা এবং নিখুঁতভাবে কার্যকর করা, উৎকৃষ্টতার প্রতি আমাদের প্রতিশ্রুতি সম্পর্কে অনেক কিছু বলে",
         projects: [
             {
                 title: "ElectroHub - ইলেকট্রনিক্স মার্কেটপ্লেস",
@@ -410,7 +411,7 @@ const project = {
                 technologiesUsed: [
                     "ফ্রন্টএন্ড এবং ব্যাকএন্ডের জন্য Next.js",
                     "পণ্য ডেটা ম্যানেজমেন্টের জন্য MongoDB",
-                    "নিরাপদ পেমেন্টের জন্য Stripe",
+                    "নিরাপদ পেমেন্টের জন্য sslcommerz",
                 ],
                 keyFeatures: [
                     "পণ্যের বিস্তারিত বিবরণ এবং স্পেসিফিকেশন",
@@ -458,23 +459,24 @@ const project = {
                 image: "/projects/agrofresh.png",
             },
             {
-                title: "BookHive - অনলাইন বুকস্টোর",
-                overview:
-                    "BookHive একটি অনলাইন বুকস্টোর যা বই প্রেমীদের জন্য ডিজাইন করা হয়েছে। এটি কিউরেটেড কালেকশন এবং ব্যক্তিগতকৃত পরামর্শের মাধ্যমে পড়ার অভিজ্ঞতা উন্নত করে।",
-                technologiesUsed: [
+                "title": "StyleHive - অনলাইন ফ্যাশন স্টোর",
+                "overview": "StyleHive একটি আধুনিক অনলাইন ফ্যাশন স্টোর যেখানে ট্রেন্ডি পোশাক ও আনুষঙ্গিক সামগ্রী পাওয়া যায়। এটি কিউরেটেড কালেকশন, কাস্টমার রিভিউ এবং ব্যক্তিগতকৃত পরামর্শের মাধ্যমে কেনাকাটার অভিজ্ঞতা উন্নত করে।",
+                "technologiesUsed": [
                     "Next.js ফ্রন্টএন্ড এবং ব্যাকএন্ডের জন্য",
-                    "MongoDB বইয়ের ডেটা এবং রিভিউ সংরক্ষণের জন্য",
-                    "Stripe পেমেন্ট ইন্টিগ্রেশনের জন্য",
+                    "MongoDB প্রোডাক্ট ডেটা এবং কাস্টমার রিভিউ সংরক্ষণের জন্য",
+                    "sslcommerz নিরাপদ পেমেন্ট ইন্টিগ্রেশনের জন্য"
                 ],
-                keyFeatures: [
-                    "উন্নত অনুসন্ধান এবং ফিল্টার",
-                    "বইয়ের রিভিউ এবং রেটিং",
-                    "অর্ডার ট্র্যাকিং এবং নোটিফিকেশন",
+                "keyFeatures": [
+                    "উন্নত অনুসন্ধান ও ক্যাটাগরি এবং মূল্য ফিল্টার",
+                    "কাস্টমার রিভিউ ও রেটিং",
+                    "অর্ডার ট্র্যাকিং ও রিয়েল-টাইম আপডেট",
+                    "ব্যক্তিগতকৃত ফ্যাশন পরামর্শ"
                 ],
-                git: "https://github.com/your-repo/bookhive",
-                live: "https://bookhive.example.com",
-                image: "/projects/bookhive.png",
-            },
+                "git": "https://github.com/your-repo/stylehive",
+                "live": "https://stylehive.example.com",
+                "image": "/projects/stylehive.png"
+            }
+            ,
             {
                 title: "DhakaPulse24 - ব্রেকিং নিউজ হাব",
                 overview:
