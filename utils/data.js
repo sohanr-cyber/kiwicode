@@ -303,7 +303,7 @@ const project = {
                     "Secure payment gateway and order tracking",
                 ],
                 git: "https://github.com/your-repo/electrohub",
-                live: "https://electrohub.example.com",
+                live: "https://electronics-52h4.vercel.app/",
                 image: "/projects/electrohub.png",
             },
             {
@@ -321,7 +321,7 @@ const project = {
                     "Interactive guides for room styling tips",
                 ],
                 git: "https://github.com/your-repo/deconest",
-                live: "https://deconest.example.com",
+                live: "https://ecomerce-phi-gold.vercel.app/",
                 image: "/projects/deconest.png",
             },
             {
@@ -339,7 +339,7 @@ const project = {
                     "Subscription model for weekly deliveries",
                 ],
                 git: "https://github.com/your-repo/agrofresh",
-                live: "https://agrofresh.example.com",
+                live: "https://organic-food-mu.vercel.app/",
                 image: "/projects/agrofresh.png",
             },
             {
@@ -379,9 +379,9 @@ const project = {
                 image: "/projects/dhakapulse24.png",
             },
             {
-                title: "OnField24 - Groundbreaking Reporting",
+                title: "Bangladesh Straigts Times- Groundbreaking Reporting",
                 overview:
-                    "OnField24 focuses on hyper-local journalism, providing on-the-ground news coverage with a strong emphasis on rural and regional stories. The platform is tailored to keep readers informed with in-depth reporting.",
+                    "Bangladesh Straigts Timesfocuses on hyper-local journalism, providing on-the-ground news coverage with a strong emphasis on rural and regional stories. The platform is tailored to keep readers informed with in-depth reporting.",
                 technologiesUsed: [
                     "React for interactive user interfaces",
                     "Express.js for backend APIs",
@@ -393,8 +393,8 @@ const project = {
                     "Social media sharing and user personalization",
                 ],
                 git: "https://github.com/your-repo/onfield24",
-                live: "https://onfield24.com",
-                image: "/projects/onfield24.png",
+                live: "https://on-field24.vercel.app",
+                image: "/projects/bdstraightstimes.png",
             },
         ]
 
@@ -418,7 +418,7 @@ const project = {
                     "নিরাপদ পেমেন্ট গেটওয়ে এবং অর্ডার ট্র্যাকিং",
                 ],
                 git: "https://github.com/your-repo/electrohub",
-                live: "https://electrohub.example.com",
+                live: "https://electronics-52h4.vercel.app/",
                 image: "/projects/electrohub.png",
             },
             {
@@ -436,7 +436,7 @@ const project = {
                     "ডেকর স্টাইলিংয়ের জন্য ইন্টারঅ্যাকটিভ গাইড",
                 ],
                 git: "https://github.com/your-repo/deconest",
-                live: "https://deconest.example.com",
+                live: "https://ecomerce-phi-gold.vercel.app/",
                 image: "/projects/deconest.png",
             },
             {
@@ -454,7 +454,7 @@ const project = {
                     "সাবস্ক্রিপশন মডেল",
                 ],
                 git: "https://github.com/your-repo/agrofresh",
-                live: "https://agrofresh.example.com",
+                live: "https://organic-food-mu.vercel.app/",
                 image: "/projects/agrofresh.png",
             },
             {
@@ -494,9 +494,9 @@ const project = {
                 image: "/projects/dhakapulse24.png",
             },
             {
-                title: "OnField24 - লোকাল নিউজ প্ল্যাটফর্ম",
+                title: "Bangladesh Straigts Times- লোকাল নিউজ প্ল্যাটফর্ম",
                 overview:
-                    "OnField24 গ্রামীণ এবং আঞ্চলিক এলাকার সংবাদ কভারেজের উপর ফোকাস করে। এটি পাঠকদের জন্য বিশ্বস্ত এবং স্থানীয় গল্প সরবরাহের জন্য ডিজাইন করা হয়েছে।",
+                    "Bangladesh Straigts Times গ্রামীণ এবং আঞ্চলিক এলাকার সংবাদ কভারেজের উপর ফোকাস করে। এটি পাঠকদের জন্য বিশ্বস্ত এবং স্থানীয় গল্প সরবরাহের জন্য ডিজাইন করা হয়েছে।",
                 technologiesUsed: [
                     "React ইন্টারঅ্যাকটিভ UI ডিজাইনের জন্য",
                     "Express.js ব্যাকএন্ডের জন্য",
@@ -508,8 +508,8 @@ const project = {
                     "সোশ্যাল শেয়ারিং এবং ব্যক্তিগতকরণ",
                 ],
                 git: "https://github.com/your-repo/onfield24",
-                live: "https://onfield24.com",
-                image: "/projects/onfield24.png",
+                live: "https://on-field24.vercel.app",
+                image: "/projects/bdstraightstimes.png",
             },
         ]
 

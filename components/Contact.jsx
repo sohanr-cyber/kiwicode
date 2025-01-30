@@ -134,7 +134,7 @@ const Contact = () => {
             <label>*Your Budget</label>
             <input
               type='text'
-              placeholder='Example: 30000'
+              placeholder='Example: 12,000'
               value={details.budget}
               onChange={e => setDetails({ ...details, budget: e.target.value })}
             />

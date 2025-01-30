@@ -82,7 +82,7 @@ const Project = ({ p, index }) => {
         )}
         {p.git && (
           <p className={styles.link}>
-            <span onClick={() => router.push(p.git)}>GitHub</span>
+            {/* <span onClick={() => router.push(p.git)}>GitHub</span> */}
             {p.live && (
               <span onClick={() => router.push(p.live)}>Live Demo</span>
             )}

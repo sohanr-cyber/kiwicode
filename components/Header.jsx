@@ -64,7 +64,7 @@ const Header = () => {
         <h3>{header[locale].p
         }
         </h3>
-        <div className={styles.btn}>
+        <div className={styles.btn} onClick={() => router.push("/?contactNow=true")}>
           {t("Contact", locale)}
         </div>
       </div>
